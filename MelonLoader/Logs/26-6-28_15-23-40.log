@@ -1,0 +1,495 @@
+[15:23:42.263] [MelonLoader.Bootstrap] Using HostFXR Path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet\host\fxr\6.0.36\hostfxr.dll
+[15:23:42.294] [MelonLoader.Bootstrap] Using .NET runtime: 'D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet'
+
+[15:23:43.262] ------------------------------
+[15:23:43.263] MelonLoader v0.7.3 Open-Beta
+[15:23:43.264] OS: Windows 11
+[15:23:43.264] Hash Code: BDD43DC0F3893C208C95389B863AB61C967AE14204DA0DD8051647E754C8709B
+[15:23:43.264] ------------------------------
+[15:23:43.264] Game Type: Il2cpp
+[15:23:43.265] Game Arch: x64
+[15:23:43.265] ------------------------------
+[15:23:43.265] Command-Line: 
+[15:23:43.265] ------------------------------
+[15:23:43.266] Core::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[15:23:43.266] Game::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[15:23:43.266] Game::DataPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator_Data
+[15:23:43.266] Game::ApplicationPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator.exe
+[15:23:43.267] Runtime Type: net6
+[15:23:43.399] ------------------------------
+[15:23:43.400] Game Name: Iron Nest: Heavy Turret Simulator
+[15:23:43.400] Game Developer: Iron Nest
+[15:23:43.402] Unity Version: 6000.3.9f1
+[15:23:43.402] Game Version: 0.4.0
+[15:23:43.402] ------------------------------
+
+[15:23:44.463] Preferences Loaded!
+
+[15:23:44.498] Loading UserLibs...
+[15:23:44.516] ------------------------------
+[15:23:44.520] Melon Assembly loaded: '.\UserLibs\IronNestFCS.Abstractions.dll'
+[15:23:44.521] SHA256 Hash: '8EBE19B12C0FE0FFE584860786F42E54AC95D7BB5E5D1F14032C3C3D393DFEA1'
+[15:23:44.521] ------------------------------
+[15:23:44.521] 0 UserLibs loaded.
+
+[15:23:44.522] Loading Plugins...
+[15:23:44.526] 0 Plugins loaded.
+
+[15:23:45.650] Loading Il2CppAssemblyGenerator...
+[15:23:45.720] [Il2CppAssemblyGenerator] Contacting RemoteAPI...
+[15:23:46.677] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:23:47.511] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-1.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:23:48.527] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-2.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:23:49.675] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://melon.samboy.dev/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:23:50.965] [ERROR] [Il2CppAssemblyGenerator] WebException (526) while Contacting RemoteAPI Host (https://melon.dubyadu.de/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 526 (<none>).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:23:50.965] [Il2CppAssemblyGenerator] RemoteAPI.DumperVersion = null
+[15:23:50.966] [Il2CppAssemblyGenerator] RemoteAPI.ObfuscationRegex = null
+[15:23:50.966] [Il2CppAssemblyGenerator] RemoteAPI.MappingURL = null
+[15:23:50.966] [Il2CppAssemblyGenerator] RemoteAPI.MappingFileSHA512 = null
+[15:23:50.970] [Il2CppAssemblyGenerator] Using Cpp2IL Version: 2022.1.0-pre-release.21
+[15:23:50.970] [Il2CppAssemblyGenerator] Using Il2CppInterop Version = 1.5.1-ci.845+f03c8f4ae507d47ea814f3d11d1ec6b0391c1576
+[15:23:50.970] [Il2CppAssemblyGenerator] Using Unity Dependencies Version = 6000.3.9
+[15:23:50.970] [Il2CppAssemblyGenerator] Using Deobfuscation Regex = null
+[15:23:50.970] [Il2CppAssemblyGenerator] Cpp2IL is up to date.
+[15:23:50.971] [Il2CppAssemblyGenerator] Cpp2IL.Plugin.StrippedCodeRegSupport is up to date.
+[15:23:50.971] [Il2CppAssemblyGenerator] UnityDependencies is up to date.
+[15:23:50.971] [Il2CppAssemblyGenerator] Checking GameAssembly...
+[15:23:51.536] [Il2CppAssemblyGenerator] Assembly is up to date. No Generation Needed.
+
+[15:23:51.537] Loading Mods...
+[15:23:51.672] ------------------------------
+[15:23:51.674] Melon Assembly loaded: '.\Mods\IronNestFCS.dll'
+[15:23:51.674] SHA256 Hash: 'CE58AEFD063028F5B32F9004E02A250DB0A324B57009693703310B4D68F48B86'
+[15:23:51.675] Melon Assembly loaded: '.\Mods\MapEnemyMarker.dll'
+[15:23:51.675] SHA256 Hash: '9D496EBD01060B044362494E3B319644AA7DA6F1BD3C99670E4A254AFBEFB112'
+
+[15:23:51.863] ------------------------------
+[15:23:51.863] IronNestFCS v1.0.4
+[15:23:51.864] by svr2kos2
+[15:23:51.864] Assembly: IronNestFCS.dll
+[15:23:51.864] ------------------------------
+[15:23:51.870] ------------------------------
+[15:23:51.870] MapEnemyMarker v1.0.0
+[15:23:51.870] by Iron Nest
+[15:23:51.870] Assembly: MapEnemyMarker.dll
+[15:23:51.871] ------------------------------
+[15:23:51.871] ------------------------------
+[15:23:51.871] 2 Mods loaded.
+
+[15:23:55.358] [WARNING] [Il2CppInterop] Class::Init signatures have been exhausted, using a substitute!
+[15:23:55.407] [Il2CppInterop] Registered mono type MelonLoader.Support.MonoEnumeratorWrapper in il2cpp domain
+[15:23:55.495] Support Module Loaded: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\SupportModules\Il2Cpp.dll
+[15:23:55.503] [IronNestFCS] IronNestFCS Host Started。Logic path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\UserData\IronNestFCS\IronNestFCS.Logic.dll
+[15:23:55.504] [IronNestFCS] Press F9 to hot reload Logic.
+[15:23:55.932] [WARNING] [IronNestFCS] [FCS] 未找到 Player Turret Piece，当前场景尚未就绪
+[15:23:55.933] [IronNestFCS] [FCS] Initialize: failed
+[15:23:55.933] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:23:55.935] MapEnemyMarker loaded!
+[15:23:55.935] [MapEnemyMarker] Web root: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\火控计算机网页版
+[15:23:55.936] [MapEnemyMarker] HTTP server started on port 45678
+[15:23:55.982] [MapEnemyMarker] Successfully patched Time.frameCount
+[15:24:36.715] [Il2CppInterop] Registered mono type MelonLoader.Support.SM_Component in il2cpp domain
+[15:24:36.846] Registered mono icall UnityEngine.Transform::SetAsLastSibling in il2cpp domain
+[15:24:36.993] [MapEnemyMarker] [MapEnemyMarker] Found Assembly-CSharp with 1116 types
+[15:24:36.994] [MapEnemyMarker] [MapEnemyMarker] Could not find FireMission type, trying broad search...
+[15:24:36.994] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCard
+[15:24:36.995] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCardPrinter
+[15:24:36.996] [MapEnemyMarker]   Candidate: Il2Cpp.FireMission
+[15:24:36.997] [MapEnemyMarker]   Found: Il2Cpp.FireMission (Instance=Instance, Entities=Entities)
+[15:24:36.998] [MapEnemyMarker] [MapEnemyMarker] Reflection init:
+[15:24:36.998] [MapEnemyMarker]   Instance prop: True
+[15:24:36.998] [MapEnemyMarker]   Entities prop: True
+[15:24:36.998] [MapEnemyMarker]   EntityRoles: True
+[15:24:36.999] [MapEnemyMarker]   MapEntityStates: True
+[15:24:36.999] [MapEnemyMarker]     Role None = 0
+[15:24:36.999] [MapEnemyMarker]     Role Enemy = 1
+[15:24:37.000] [MapEnemyMarker]     Role Ally = 2
+[15:24:37.000] [MapEnemyMarker]     Role Spotter = 6
+[15:24:37.000] [MapEnemyMarker]     Role AllyGroup1 = 10
+[15:24:37.001] [MapEnemyMarker]     Role AllyGroup2 = 18
+[15:24:37.001] [MapEnemyMarker]     Role Target = 32
+[15:24:37.001] [MapEnemyMarker]     Role OptionalTarget = 64
+[15:24:37.001] [MapEnemyMarker]     Role EnemyGroup1 = 129
+[15:24:37.001] [MapEnemyMarker]     Role EnemyGroup2 = 257
+[15:24:37.001] [MapEnemyMarker]     Role EnemyGroup3 = 513
+[15:24:37.001] [MapEnemyMarker]     Role Artillery = 32768
+[15:24:37.001] [MapEnemyMarker]     Role Fortification = 65536
+[15:24:37.001] [MapEnemyMarker]     Role Infantry = 131072
+[15:24:37.002] [MapEnemyMarker]     Role Tank = 262144
+[15:24:37.002] [MapEnemyMarker]     Role Reference = 33554432
+[15:24:48.919] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:24:48.921] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[15:24:48.921] [IronNestFCS] [FCS] Initialize: failed
+[15:24:48.921] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:24:49.161] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:24:49.163] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[15:24:49.163] [IronNestFCS] [FCS] Initialize: failed
+[15:24:49.163] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:24:56.075] [MapEnemyMarker]   [0] ID=civ, Name=Civ, Role=Ally, MapPos=(17.3, 4.5, 0.0), State=None, Health=1, Location=LocalPos=((17.28, 4.49))
+[15:24:56.075] [MapEnemyMarker]   [1] ID=civ1, Name=Civ1, Role=Ally, MapPos=(16.5, 3.0, 0.0), State=None, Health=1, Location=LocalPos=((16.51, 3.04))
+[15:24:56.076] [MapEnemyMarker]   [2] ID=civ2, Name=Civ2, Role=Ally, MapPos=(16.4, 4.4, 0.0), State=None, Health=1, Location=LocalPos=((16.36, 4.44))
+[15:24:56.082] [MapEnemyMarker]   [3] ID=civ3, Name=Civ3, Role=Ally, MapPos=(17.1, 3.9, 0.0), State=None, Health=1, Location=LocalPos=((17.08, 3.93))
+[15:24:56.083] [MapEnemyMarker]   [4] ID=civ4, Name=Civ4, Role=Ally, MapPos=(15.8, 3.3, 0.0), State=None, Health=1, Location=LocalPos=((15.84, 3.28))
+[15:24:56.083] [MapEnemyMarker]   [5] ID=civ5, Name=Civ5, Role=Ally, MapPos=(16.9, 3.7, 0.0), State=None, Health=1, Location=LocalPos=((16.94, 3.70))
+[15:24:56.084] [MapEnemyMarker]   [6] ID=civ6, Name=Civ6, Role=Ally, MapPos=(16.1, 3.0, 0.0), State=None, Health=1, Location=LocalPos=((16.12, 3.04))
+[15:24:56.084] [MapEnemyMarker]   [7] ID=civ7, Name=Civ7, Role=Ally, MapPos=(16.0, 3.1, 0.0), State=None, Health=1, Location=LocalPos=((16.05, 3.08))
+[15:24:56.084] [MapEnemyMarker]   [8] ID=prop, Name=Propaganda office, Role=Ally, MapPos=(16.7, 3.1, 0.0), State=None, Health=1, Location=LocalPos=((16.72, 3.12))
+[15:24:56.084] [MapEnemyMarker]   [9] ID=police, Name=Police, Role=Ally, MapPos=(16.1, 2.5, 0.0), State=None, Health=1, Location=LocalPos=((16.13, 2.47))
+[15:24:56.085] [MapEnemyMarker]   [10] ID=police1, Name=Police1, Role=Ally, MapPos=(17.2, 4.0, 0.0), State=None, Health=1, Location=LocalPos=((17.19, 4.02))
+[15:24:56.085] [MapEnemyMarker]   [11] ID=police2, Name=Police2, Role=Ally, MapPos=(15.9, 3.7, 0.0), State=None, Health=1, Location=LocalPos=((15.89, 3.69))
+[15:24:56.085] [MapEnemyMarker]   [12] ID=hospital, Name=Hospital, Role=Ally, MapPos=(16.4, 3.3, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:24:56.085] [MapEnemyMarker]   [13] ID=target1, Name=Target#1, Role=Enemy, Target, MapPos=(16.4, 3.2, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:24:56.094] [MapEnemyMarker] 1 enemies updated
+[15:24:56.895] [MapEnemyMarker] 1 enemies updated
+[15:24:57.903] [MapEnemyMarker] 1 enemies updated
+[15:24:58.297] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:24:58.481] [IronNestFCS] [FCS] Initialize: success
+[15:24:58.482] [IronNestFCS] [Reload] Logic loaded and initialized successfully.
+[15:24:58.901] [MapEnemyMarker] 1 enemies updated
+[15:24:59.914] [MapEnemyMarker] 1 enemies updated
+[15:25:00.916] [MapEnemyMarker] 1 enemies updated
+[15:25:01.924] [MapEnemyMarker] 1 enemies updated
+[15:25:02.937] [MapEnemyMarker] 1 enemies updated
+[15:25:03.945] [MapEnemyMarker] 1 enemies updated
+[15:25:04.953] [MapEnemyMarker] 1 enemies updated
+[15:25:05.965] [MapEnemyMarker] 1 enemies updated
+[15:25:06.964] [MapEnemyMarker] 1 enemies updated
+[15:25:07.970] [MapEnemyMarker] 1 enemies updated
+[15:25:08.972] [MapEnemyMarker] 1 enemies updated
+[15:25:09.981] [MapEnemyMarker] 1 enemies updated
+[15:25:10.976] [MapEnemyMarker] 1 enemies updated
+[15:25:11.613] [FCS] GunSystem Left: Cylinder bullets: HE, HE, HCHE, HE, HE, HCHE
+[15:25:11.614] [FCS] GunSystem Left: Cylinder bullets: HE, HE, HCHE, HE, HE, HCHE
+[15:25:11.983] [MapEnemyMarker] 1 enemies updated
+[15:25:12.987] [MapEnemyMarker] 1 enemies updated
+[15:25:13.995] [MapEnemyMarker] 1 enemies updated
+[15:25:14.993] [MapEnemyMarker] 1 enemies updated
+[15:25:16.001] [MapEnemyMarker] 1 enemies updated
+[15:25:17.013] [MapEnemyMarker] 1 enemies updated
+[15:25:18.015] [MapEnemyMarker] 1 enemies updated
+[15:25:19.022] [MapEnemyMarker] 1 enemies updated
+[15:25:20.013] [MapEnemyMarker] 1 enemies updated
+[15:25:21.029] [MapEnemyMarker] 1 enemies updated
+[15:25:22.021] [MapEnemyMarker] 1 enemies updated
+[15:25:23.021] [MapEnemyMarker] 1 enemies updated
+[15:25:24.032] [MapEnemyMarker] 1 enemies updated
+[15:25:25.048] [MapEnemyMarker] 1 enemies updated
+[15:25:26.042] [MapEnemyMarker] 1 enemies updated
+[15:25:27.036] [MapEnemyMarker] 1 enemies updated
+[15:25:28.038] [MapEnemyMarker] 1 enemies updated
+[15:25:28.040] [FCS] GunSystem Left: Cylinder bullets: HE, HE, HCHE, HE, HE, HCHE
+[15:25:28.044] [FCS] GunSystem Left: Cylinder bullets: HE, HE, HCHE, HE, HE, HCHE
+[15:25:29.033] [MapEnemyMarker] 1 enemies updated
+[15:25:30.038] [MapEnemyMarker] 1 enemies updated
+[15:25:31.038] [MapEnemyMarker] 1 enemies updated
+[15:25:32.040] [MapEnemyMarker] 1 enemies updated
+[15:25:33.081] [MapEnemyMarker] 1 enemies updated
+[15:25:34.048] [MapEnemyMarker] 1 enemies updated
+[15:25:35.055] [MapEnemyMarker] 1 enemies updated
+[15:25:36.055] [MapEnemyMarker] 1 enemies updated
+[15:25:37.058] [MapEnemyMarker] 1 enemies updated
+[15:25:38.054] [MapEnemyMarker] 1 enemies updated
+[15:25:39.056] [MapEnemyMarker] 1 enemies updated
+[15:25:40.057] [MapEnemyMarker] 1 enemies updated
+[15:25:41.057] [MapEnemyMarker] 1 enemies updated
+[15:25:42.059] [MapEnemyMarker] 1 enemies updated
+[15:25:43.063] [MapEnemyMarker] 1 enemies updated
+[15:25:44.068] [MapEnemyMarker] 1 enemies updated
+[15:25:45.074] [MapEnemyMarker] 1 enemies updated
+[15:25:46.083] [MapEnemyMarker] 1 enemies updated
+[15:25:47.080] [MapEnemyMarker] 1 enemies updated
+[15:25:48.074] [MapEnemyMarker] 1 enemies updated
+[15:25:49.073] [MapEnemyMarker] 1 enemies updated
+[15:25:50.075] [MapEnemyMarker] 1 enemies updated
+[15:25:51.081] [MapEnemyMarker] 1 enemies updated
+[15:25:52.081] [MapEnemyMarker] 1 enemies updated
+[15:25:53.080] [MapEnemyMarker] 1 enemies updated
+[15:25:54.076] [MapEnemyMarker] 1 enemies updated
+[15:25:55.083] [MapEnemyMarker] 1 enemies updated
+[15:25:56.077] [MapEnemyMarker] 1 enemies updated
+[15:25:57.084] [MapEnemyMarker] 1 enemies updated
+[15:25:58.075] [MapEnemyMarker] 1 enemies updated
+[15:25:59.083] [MapEnemyMarker] 1 enemies updated
+[15:26:00.080] [MapEnemyMarker] 1 enemies updated
+[15:26:01.074] [MapEnemyMarker] 1 enemies updated
+[15:26:02.082] [MapEnemyMarker] 1 enemies updated
+[15:26:03.079] [MapEnemyMarker] 1 enemies updated
+[15:26:04.076] [MapEnemyMarker] 1 enemies updated
+[15:26:05.072] [MapEnemyMarker] 1 enemies updated
+[15:26:06.082] [MapEnemyMarker] 1 enemies updated
+[15:26:07.078] [MapEnemyMarker] 1 enemies updated
+[15:26:08.083] [MapEnemyMarker] 1 enemies updated
+[15:26:09.080] [MapEnemyMarker] 1 enemies updated
+[15:26:10.090] [MapEnemyMarker] 1 enemies updated
+[15:26:11.089] [MapEnemyMarker] 1 enemies updated
+[15:26:12.096] [MapEnemyMarker] 1 enemies updated
+[15:26:13.097] [MapEnemyMarker] 1 enemies updated
+[15:26:14.097] [MapEnemyMarker] 1 enemies updated
+[15:26:15.097] [MapEnemyMarker] 1 enemies updated
+[15:26:16.098] [MapEnemyMarker] 1 enemies updated
+[15:26:17.097] [MapEnemyMarker] 1 enemies updated
+[15:26:18.103] [MapEnemyMarker] 1 enemies updated
+[15:26:19.111] [MapEnemyMarker] 1 enemies updated
+[15:26:20.114] [MapEnemyMarker] 1 enemies updated
+[15:26:21.116] [MapEnemyMarker] 1 enemies updated
+[15:26:22.123] [MapEnemyMarker] 1 enemies updated
+[15:26:23.120] [MapEnemyMarker] 1 enemies updated
+[15:26:24.122] [MapEnemyMarker] 1 enemies updated
+[15:26:25.113] [MapEnemyMarker] 1 enemies updated
+[15:26:26.117] [MapEnemyMarker] 1 enemies updated
+[15:26:27.118] [MapEnemyMarker] 1 enemies updated
+[15:26:28.125] [MapEnemyMarker] 1 enemies updated
+[15:26:29.151] [MapEnemyMarker] 1 enemies updated
+[15:26:30.141] [MapEnemyMarker] 1 enemies updated
+[15:26:31.135] [MapEnemyMarker] 1 enemies updated
+[15:26:32.139] [MapEnemyMarker] 1 enemies updated
+[15:26:33.147] [MapEnemyMarker] 1 enemies updated
+[15:26:34.135] [MapEnemyMarker] 1 enemies updated
+[15:26:35.139] [MapEnemyMarker] 1 enemies updated
+[15:26:36.137] [MapEnemyMarker] 1 enemies updated
+[15:26:37.148] [MapEnemyMarker] 1 enemies updated
+[15:26:38.151] [MapEnemyMarker] 1 enemies updated
+[15:26:39.155] [MapEnemyMarker] 1 enemies updated
+[15:26:40.161] [MapEnemyMarker] 1 enemies updated
+[15:26:41.166] [MapEnemyMarker] 1 enemies updated
+[15:26:42.157] [MapEnemyMarker] 1 enemies updated
+[15:26:43.163] [MapEnemyMarker] 1 enemies updated
+[15:26:44.161] [MapEnemyMarker] 1 enemies updated
+[15:26:45.160] [MapEnemyMarker] 1 enemies updated
+[15:26:46.161] [MapEnemyMarker] 1 enemies updated
+[15:26:47.173] [MapEnemyMarker] 1 enemies updated
+[15:26:48.178] [MapEnemyMarker] 1 enemies updated
+[15:26:49.180] [MapEnemyMarker] 1 enemies updated
+[15:26:50.180] [MapEnemyMarker] 1 enemies updated
+[15:26:51.184] [MapEnemyMarker] 1 enemies updated
+[15:26:52.174] [MapEnemyMarker] 1 enemies updated
+[15:26:53.183] [MapEnemyMarker] 1 enemies updated
+[15:26:54.184] [MapEnemyMarker] 1 enemies updated
+[15:26:55.193] [MapEnemyMarker] 1 enemies updated
+[15:26:56.201] [MapEnemyMarker] 1 enemies updated
+[15:26:57.202] [MapEnemyMarker] 1 enemies updated
+[15:26:58.194] [MapEnemyMarker] 1 enemies updated
+[15:26:59.201] [MapEnemyMarker] 1 enemies updated
+[15:27:00.193] [MapEnemyMarker] 1 enemies updated
+[15:27:01.209] [MapEnemyMarker] 1 enemies updated
+[15:27:02.199] [MapEnemyMarker] 1 enemies updated
+[15:27:03.199] [MapEnemyMarker] 1 enemies updated
+[15:27:04.201] [MapEnemyMarker] 1 enemies updated
+[15:27:05.204] [MapEnemyMarker] 1 enemies updated
+[15:27:06.202] [MapEnemyMarker] 1 enemies updated
+[15:27:07.195] [MapEnemyMarker] 1 enemies updated
+[15:27:08.196] [MapEnemyMarker] 1 enemies updated
+[15:27:09.199] [MapEnemyMarker] 1 enemies updated
+[15:27:10.198] [MapEnemyMarker] 1 enemies updated
+[15:27:11.201] [MapEnemyMarker] 1 enemies updated
+[15:27:12.197] [MapEnemyMarker] 1 enemies updated
+[15:27:13.199] [MapEnemyMarker] 1 enemies updated
+[15:27:14.198] [MapEnemyMarker] 1 enemies updated
+[15:27:15.204] [MapEnemyMarker] 1 enemies updated
+[15:27:16.212] [MapEnemyMarker] 1 enemies updated
+[15:27:17.215] [MapEnemyMarker] 1 enemies updated
+[15:27:18.222] [MapEnemyMarker] 1 enemies updated
+[15:27:19.223] [MapEnemyMarker] 1 enemies updated
+[15:27:20.221] [MapEnemyMarker] 1 enemies updated
+[15:27:21.221] [MapEnemyMarker] 1 enemies updated
+[15:27:22.217] [MapEnemyMarker] 1 enemies updated
+[15:27:23.224] [MapEnemyMarker] 1 enemies updated
+[15:27:24.217] [MapEnemyMarker] 1 enemies updated
+[15:27:25.219] [MapEnemyMarker] 1 enemies updated
+[15:27:26.216] [MapEnemyMarker] 1 enemies updated
+[15:27:27.213] [MapEnemyMarker] 1 enemies updated
+[15:27:28.222] [MapEnemyMarker] 1 enemies updated
+[15:27:29.214] [MapEnemyMarker] 1 enemies updated
+[15:27:30.213] [MapEnemyMarker] 1 enemies updated
+[15:27:31.217] [MapEnemyMarker] 1 enemies updated
+[15:27:32.221] [MapEnemyMarker] 1 enemies updated
+[15:27:33.215] [MapEnemyMarker] 1 enemies updated
+[15:27:34.221] [MapEnemyMarker] 1 enemies updated
+[15:27:34.365] [FCS] GunSystem Left: Cylinder bullets: , HE, HCHE, HE, HE, HCHE
+[15:27:34.365] [FCS] GunSystem Left: Cylinder bullets: , HE, HCHE, HE, HE, HCHE
+[15:27:34.366] [GunSystem] NextBullet
+[15:27:35.224] [MapEnemyMarker] 1 enemies updated
+[15:27:35.875] [FCS] GunSystem Left: Cylinder bullets: HE, HCHE, HE, HE, HCHE, 
+[15:27:36.219] [MapEnemyMarker] 1 enemies updated
+[15:27:37.219] [MapEnemyMarker] 1 enemies updated
+[15:27:40.566] [MapEnemyMarker] 1 enemies updated
+[15:29:23.902] [MapEnemyMarker] 1 enemies updated
+[15:29:24.892] [MapEnemyMarker] 1 enemies updated
+[15:29:25.887] [MapEnemyMarker] 1 enemies updated
+[15:29:26.886] [MapEnemyMarker] 1 enemies updated
+[15:29:27.890] [MapEnemyMarker] 1 enemies updated
+[15:29:28.888] [MapEnemyMarker] 1 enemies updated
+[15:29:29.892] [MapEnemyMarker] 1 enemies updated
+[15:29:30.895] [MapEnemyMarker] 1 enemies updated
+[15:29:31.900] [MapEnemyMarker] 1 enemies updated
+[15:29:32.889] [MapEnemyMarker] 1 enemies updated
+[15:29:33.892] [MapEnemyMarker] 1 enemies updated
+[15:29:34.889] [MapEnemyMarker] 1 enemies updated
+[15:29:35.886] [MapEnemyMarker] 1 enemies updated
+[15:29:36.888] [MapEnemyMarker] 1 enemies updated
+[15:29:37.894] [MapEnemyMarker] 1 enemies updated
+[15:29:38.894] [MapEnemyMarker] 1 enemies updated
+[15:29:39.902] [MapEnemyMarker] 1 enemies updated
+[15:29:40.900] [MapEnemyMarker] 1 enemies updated
+[15:29:41.905] [MapEnemyMarker] 1 enemies updated
+[15:29:42.908] [MapEnemyMarker] 1 enemies updated
+[15:29:43.914] [MapEnemyMarker] 1 enemies updated
+[15:29:44.908] [MapEnemyMarker] 1 enemies updated
+[15:29:45.916] [MapEnemyMarker] 1 enemies updated
+[15:29:46.911] [MapEnemyMarker] 1 enemies updated
+[15:29:47.911] [MapEnemyMarker] 1 enemies updated
+[15:29:48.911] [MapEnemyMarker] 1 enemies updated
+[15:29:49.911] [MapEnemyMarker] 1 enemies updated
+[15:29:50.913] [MapEnemyMarker] 1 enemies updated
+[15:29:51.917] [MapEnemyMarker] 1 enemies updated
+[15:29:52.916] [MapEnemyMarker] 1 enemies updated
+[15:29:53.908] [MapEnemyMarker] 1 enemies updated
+[15:29:54.923] [MapEnemyMarker] 1 enemies updated
+[15:29:55.925] [MapEnemyMarker] 1 enemies updated
+[15:29:56.927] [MapEnemyMarker] 1 enemies updated
+[15:29:57.932] [MapEnemyMarker] 1 enemies updated
+[15:29:58.928] [MapEnemyMarker] 1 enemies updated
+[15:29:59.932] [MapEnemyMarker] 1 enemies updated
+[15:30:00.934] [MapEnemyMarker] 1 enemies updated
+[15:30:01.933] [MapEnemyMarker] 1 enemies updated
+[15:30:02.933] [MapEnemyMarker] 1 enemies updated
+[15:30:03.929] [MapEnemyMarker] 1 enemies updated
+[15:30:04.932] [MapEnemyMarker] 1 enemies updated
+[15:30:05.938] [MapEnemyMarker] 1 enemies updated
+[15:30:06.937] [MapEnemyMarker] 1 enemies updated
+[15:30:07.932] [MapEnemyMarker] 1 enemies updated
+[15:30:08.930] [MapEnemyMarker] 1 enemies updated
+[15:30:09.933] [MapEnemyMarker] 1 enemies updated
+[15:30:10.942] [MapEnemyMarker] 1 enemies updated
+[15:30:11.948] [MapEnemyMarker] 1 enemies updated
+[15:30:12.951] [MapEnemyMarker] 1 enemies updated
+[15:30:13.956] [MapEnemyMarker] 1 enemies updated
+[15:30:14.955] [MapEnemyMarker] 1 enemies updated
+[15:30:15.952] [MapEnemyMarker] 1 enemies updated
+[15:30:16.952] [MapEnemyMarker] 1 enemies updated
+[15:30:17.947] [MapEnemyMarker] 1 enemies updated
+[15:30:18.952] [MapEnemyMarker] 1 enemies updated
+[15:30:19.946] [MapEnemyMarker] 1 enemies updated
+[15:30:20.951] [MapEnemyMarker] 1 enemies updated
+[15:30:21.951] [MapEnemyMarker] 1 enemies updated
+[15:30:22.953] [MapEnemyMarker] 1 enemies updated
+[15:30:23.946] [MapEnemyMarker] 1 enemies updated
+[15:30:24.949] [MapEnemyMarker] 1 enemies updated
+[15:30:25.962] [MapEnemyMarker] 1 enemies updated
+[15:30:26.966] [MapEnemyMarker] 1 enemies updated
+[15:30:27.969] [MapEnemyMarker] 1 enemies updated
+[15:30:28.976] [MapEnemyMarker] 1 enemies updated
+[15:30:29.973] [MapEnemyMarker] 1 enemies updated
+[15:30:30.978] [MapEnemyMarker] 1 enemies updated
+[15:30:31.977] [MapEnemyMarker] 1 enemies updated
+[15:30:32.973] [MapEnemyMarker] 1 enemies updated
+[15:30:33.966] [MapEnemyMarker] 1 enemies updated
+[15:30:34.972] [MapEnemyMarker] 1 enemies updated
+[15:30:35.968] [MapEnemyMarker] 1 enemies updated
+[15:30:36.973] [MapEnemyMarker] 1 enemies updated
+[15:30:37.978] [MapEnemyMarker] 1 enemies updated
+[15:30:38.975] [MapEnemyMarker] 1 enemies updated
+[15:30:39.974] [MapEnemyMarker] 1 enemies updated
+[15:30:40.974] [MapEnemyMarker] 1 enemies updated
+[15:30:41.983] [MapEnemyMarker] 1 enemies updated
+[15:30:42.991] [MapEnemyMarker] 1 enemies updated
+[15:30:43.991] [MapEnemyMarker] 1 enemies updated
+[15:30:44.990] [MapEnemyMarker] 1 enemies updated
+[15:30:45.990] [MapEnemyMarker] 1 enemies updated
+[15:30:46.993] [MapEnemyMarker] 1 enemies updated
+[15:30:47.986] [MapEnemyMarker] 1 enemies updated
+[15:30:48.997] [MapEnemyMarker] 1 enemies updated
+[15:30:49.993] [MapEnemyMarker] 1 enemies updated
+[15:30:50.995] [MapEnemyMarker] 1 enemies updated
+[15:30:51.992] [MapEnemyMarker] 1 enemies updated
+[15:30:52.986] [MapEnemyMarker] 1 enemies updated
+[15:30:53.998] [MapEnemyMarker] 1 enemies updated
+[15:30:54.993] [MapEnemyMarker] 1 enemies updated
+[15:30:55.988] [MapEnemyMarker] 1 enemies updated
+[15:30:56.986] [MapEnemyMarker] 1 enemies updated
+[15:30:57.991] [MapEnemyMarker] 1 enemies updated
+[15:30:58.986] [MapEnemyMarker] 1 enemies updated
+[15:30:59.993] [MapEnemyMarker] 1 enemies updated
+[15:31:00.994] [MapEnemyMarker] 1 enemies updated
+[15:31:01.991] [MapEnemyMarker] 1 enemies updated
+[15:31:02.816] [FCS] GunSystem Right: Cylinder bullets: , , , , , 
+[15:31:02.816] [FCS] GunSystem Right: Cylinder bullets: , , , , , 
+[15:31:02.833] [ERROR] [FCS] BuyShell: Can't find HE card
+[15:31:02.847] [FCS] GunSystem Right: Cylinder bullets: , , , , , 
+[15:31:02.847] [ERROR] [FCS] GunSystem Right: No HE available in cylinder, current bullets: , , , , , 
+[15:31:02.994] [MapEnemyMarker] 1 enemies updated
+[15:31:03.996] [MapEnemyMarker] 1 enemies updated
+[15:31:04.990] [MapEnemyMarker] 1 enemies updated
+[15:31:05.995] [MapEnemyMarker] 1 enemies updated
+[15:31:06.996] [MapEnemyMarker] 1 enemies updated
+[15:31:07.999] [MapEnemyMarker] 1 enemies updated
+[15:31:08.998] [MapEnemyMarker] 1 enemies updated
+[15:31:09.998] [MapEnemyMarker] 1 enemies updated
+[15:31:10.219] [FCS] GunSystem Left: Cylinder bullets: , HCHE, HE, HE, HCHE, 
+[15:31:10.220] [FCS] GunSystem Left: Cylinder bullets: , HCHE, HE, HE, HCHE, 
+[15:31:10.220] [GunSystem] NextBullet
+[15:31:10.990] [MapEnemyMarker] 1 enemies updated
+[15:31:11.725] [FCS] GunSystem Left: Cylinder bullets: HCHE, HE, HE, HCHE, , 
+[15:31:11.726] [GunSystem] NextBullet
+[15:31:11.986] [MapEnemyMarker] 1 enemies updated
+[15:31:12.991] [MapEnemyMarker] 1 enemies updated
+[15:31:13.225] [FCS] GunSystem Left: Cylinder bullets: HE, HE, HCHE, , , HCHE
+[15:31:13.998] [MapEnemyMarker] 1 enemies updated
+[15:31:14.988] [MapEnemyMarker] 1 enemies updated
+[15:31:15.992] [MapEnemyMarker] 1 enemies updated
+[15:31:16.996] [MapEnemyMarker] 1 enemies updated
+[15:31:17.995] [MapEnemyMarker] 1 enemies updated
+[15:31:18.986] [MapEnemyMarker] 1 enemies updated
+[15:31:19.986] [MapEnemyMarker] 1 enemies updated
+[15:31:20.986] [MapEnemyMarker] 1 enemies updated
+[15:31:21.998] [MapEnemyMarker] 1 enemies updated
+[15:31:22.998] [MapEnemyMarker] 1 enemies updated
+[15:31:23.991] [MapEnemyMarker] 1 enemies updated
+[15:31:24.988] [MapEnemyMarker] 1 enemies updated
+[15:31:25.989] [MapEnemyMarker] 1 enemies updated
+[15:31:26.993] [MapEnemyMarker] 1 enemies updated
+[15:31:27.995] [MapEnemyMarker] 1 enemies updated
+[15:31:28.990] [MapEnemyMarker] 1 enemies updated
+[15:31:29.998] [MapEnemyMarker] 1 enemies updated
+[15:31:31.008] [MapEnemyMarker] 1 enemies updated
+[15:31:32.017] [MapEnemyMarker] 1 enemies updated
+[15:31:37.877] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:31:37.879] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[15:31:37.879] [IronNestFCS] [FCS] Initialize: failed
+[15:31:37.880] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:31:44.051] [MapEnemyMarker] 35 enemies updated
+[15:31:45.052] [MapEnemyMarker] 35 enemies updated
+[15:31:45.999] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:31:46.021] [IronNestFCS] [FCS] PurchaseDeck: Found card APShell
+[15:31:46.022] [IronNestFCS] [FCS] PurchaseDeck: Found card HCHEShell
+[15:31:46.022] [IronNestFCS] [FCS] PurchaseDeck: Found card HEShell
+[15:31:46.022] [IronNestFCS] [FCS] PurchaseDeck: Found card SMOKEShell
+[15:31:46.022] [IronNestFCS] [FCS] PurchaseDeck: Found card STARShell
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card ScoutPlane
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card Spotter
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card MoveDirection
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card PowderCharges
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card PHGNShell
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card INCNShell
+[15:31:46.023] [IronNestFCS] [FCS] PurchaseDeck: Found card ATMCShell
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card CLMNShell
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card MSTDShell
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card PRPGShell
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card TEARShell
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card LocationReport
+[15:31:46.024] [IronNestFCS] [FCS] PurchaseDeck: Found card ScoutPlane_OnTimeUse
+[15:31:46.027] [IronNestFCS] [FCS] Initialize: success
+[15:31:46.028] [IronNestFCS] [Reload] Logic loaded and initialized successfully.
+[15:31:46.062] [MapEnemyMarker] 35 enemies updated
+[15:31:47.050] [MapEnemyMarker] 35 enemies updated
+[15:31:56.919] Preferences Saved!

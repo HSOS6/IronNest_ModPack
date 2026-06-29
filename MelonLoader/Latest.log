@@ -1,0 +1,753 @@
+[17:45:58.836] [MelonLoader.Bootstrap] Using HostFXR Path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet\host\fxr\6.0.36\hostfxr.dll
+[17:45:58.839] [MelonLoader.Bootstrap] Using .NET runtime: 'D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet'
+
+[17:46:02.429] ------------------------------
+[17:46:02.430] MelonLoader v0.7.3 Open-Beta
+[17:46:02.431] OS: Windows 11
+[17:46:02.431] Hash Code: BDD43DC0F3893C208C95389B863AB61C967AE14204DA0DD8051647E754C8709B
+[17:46:02.431] ------------------------------
+[17:46:02.431] Game Type: Il2cpp
+[17:46:02.431] Game Arch: x64
+[17:46:02.432] ------------------------------
+[17:46:02.432] Command-Line: 
+[17:46:02.432] ------------------------------
+[17:46:02.432] Core::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[17:46:02.433] Game::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[17:46:02.433] Game::DataPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator_Data
+[17:46:02.433] Game::ApplicationPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator.exe
+[17:46:02.433] Runtime Type: net6
+[17:46:02.886] ------------------------------
+[17:46:02.887] Game Name: Iron Nest: Heavy Turret Simulator
+[17:46:02.887] Game Developer: Iron Nest
+[17:46:02.889] Unity Version: 6000.3.9f1
+[17:46:02.889] Game Version: 0.4.0
+[17:46:02.889] ------------------------------
+
+[17:46:05.688] Preferences Loaded!
+
+[17:46:05.907] Loading UserLibs...
+[17:46:06.000] ------------------------------
+[17:46:06.031] Melon Assembly loaded: '.\UserLibs\IronNestFCS.Abstractions.dll'
+[17:46:06.031] SHA256 Hash: '8EBE19B12C0FE0FFE584860786F42E54AC95D7BB5E5D1F14032C3C3D393DFEA1'
+[17:46:06.031] ------------------------------
+[17:46:06.031] 0 UserLibs loaded.
+
+[17:46:06.032] Loading Plugins...
+[17:46:06.036] 0 Plugins loaded.
+
+[17:46:12.412] Loading Il2CppAssemblyGenerator...
+[17:46:12.730] [Il2CppAssemblyGenerator] Contacting RemoteAPI...
+[17:46:14.946] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[17:46:16.955] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-1.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[17:46:17.691] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-2.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[17:46:18.665] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://melon.samboy.dev/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[17:46:19.791] [ERROR] [Il2CppAssemblyGenerator] WebException (526) while Contacting RemoteAPI Host (https://melon.dubyadu.de/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 526 (<none>).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[17:46:19.791] [Il2CppAssemblyGenerator] RemoteAPI.DumperVersion = null
+[17:46:19.793] [Il2CppAssemblyGenerator] RemoteAPI.ObfuscationRegex = null
+[17:46:19.794] [Il2CppAssemblyGenerator] RemoteAPI.MappingURL = null
+[17:46:19.794] [Il2CppAssemblyGenerator] RemoteAPI.MappingFileSHA512 = null
+[17:46:19.827] [Il2CppAssemblyGenerator] Using Cpp2IL Version: 2022.1.0-pre-release.21
+[17:46:19.827] [Il2CppAssemblyGenerator] Using Il2CppInterop Version = 1.5.1-ci.845+f03c8f4ae507d47ea814f3d11d1ec6b0391c1576
+[17:46:19.827] [Il2CppAssemblyGenerator] Using Unity Dependencies Version = 6000.3.9
+[17:46:19.827] [Il2CppAssemblyGenerator] Using Deobfuscation Regex = null
+[17:46:19.828] [Il2CppAssemblyGenerator] Cpp2IL is up to date.
+[17:46:19.828] [Il2CppAssemblyGenerator] Cpp2IL.Plugin.StrippedCodeRegSupport is up to date.
+[17:46:19.828] [Il2CppAssemblyGenerator] UnityDependencies is up to date.
+[17:46:19.828] [Il2CppAssemblyGenerator] Checking GameAssembly...
+[17:46:20.381] [Il2CppAssemblyGenerator] Assembly Generation Needed!
+[17:46:20.452] [Il2CppAssemblyGenerator] Executing Cpp2IL...
+[17:46:20.477] [Il2CppAssemblyGenerator] "D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\Cpp2IL.exe" --game-path "D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo" --exe-name "Iron Nest Heavy Turret Simulator" --output-as dummydll --use-processor attributeanalyzer attributeinjector
+[17:46:21.579] [Il2CppAssemblyGenerator] ===Cpp2IL by Samboy063===
+[17:46:21.580] [Il2CppAssemblyGenerator] A Tool to Reverse Unity's "il2cpp" Build Process.
+[17:46:21.588] [Il2CppAssemblyGenerator] Version 2022.1.0-pre-release.21+58fc404ac503f4e512055cafc48c03088fc6e224
+[17:46:21.589] [Il2CppAssemblyGenerator] 
+[17:46:21.605] [Il2CppAssemblyGenerator] [Warn] [Program] NO_COLOR set, disabling ANSI color codes as you requested.
+[17:46:21.616] [Il2CppAssemblyGenerator] [Info] [Program] Running on Win32NT
+[17:46:21.749] [Il2CppAssemblyGenerator] [Info] [Plugins] Loading plugins from D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\Plugins...
+[17:46:21.958] [Il2CppAssemblyGenerator] [Info] [Plugins] Using Plugin: Cpp2IL Built-In
+[17:46:21.959] [Il2CppAssemblyGenerator] [Info] [Plugins] Using Plugin: Stripped CodeReg Support
+[17:46:22.056] [Il2CppAssemblyGenerator] [Info] [Program] Determined game's unity version to be 6000.3.9f1
+[17:46:22.729] [Il2CppAssemblyGenerator] [Info] [Library] Initializing Metadata...
+[17:46:22.733] [Il2CppAssemblyGenerator] [Info] [Library] 	Using actual IL2CPP Metadata version 39
+[17:46:23.274] [Il2CppAssemblyGenerator] [Info] [Library] Initialized Metadata in 543ms
+[17:46:23.274] [Il2CppAssemblyGenerator] [Info] [Library] Using binary type Portable Executable (from LibCpp2IL)
+[17:46:23.276] [Il2CppAssemblyGenerator] [Info] [Library] Searching Binary for Required Data...
+[17:46:23.681] [Il2CppAssemblyGenerator] [Info] [Library] Got Binary codereg: 0x182246F70, metareg: 0x1823D4010 in 406ms.
+[17:46:23.681] [Il2CppAssemblyGenerator] [Info] [Library] Initializing Binary...
+[17:46:23.764] [Il2CppAssemblyGenerator] [Info] [Library] Initialized Binary in 83ms
+[17:46:24.049] [Il2CppAssemblyGenerator] [Info] [Library] Mapping pointers to Il2CppMethodDefinitions...Processed 137678 OK (285ms)
+[17:46:24.064] [Il2CppAssemblyGenerator] [Info] [Program] Creating application model...
+[17:46:25.142] [Il2CppAssemblyGenerator] [Info] [Program] Application model created in 1077.6933ms
+[17:46:25.142] [Il2CppAssemblyGenerator] [Info] [Program] Pre-processing processing layers...
+[17:46:25.143] [Il2CppAssemblyGenerator] [Info] [Program]     CustomAttribute Analyzer...
+[17:46:25.143] [Il2CppAssemblyGenerator] [Info] [Program]     CustomAttribute Analyzer finished in 0.0907ms
+[17:46:25.143] [Il2CppAssemblyGenerator] [Info] [Program]     Attribute Injector...
+[17:46:25.143] [Il2CppAssemblyGenerator] [Info] [Program]     Attribute Injector finished in 0.0156ms
+[17:46:25.143] [Il2CppAssemblyGenerator] [Info] [Program] Invoking processing layers...
+[17:46:25.144] [Il2CppAssemblyGenerator] [Info] [Program]     CustomAttribute Analyzer...
+[17:46:25.386] [Il2CppAssemblyGenerator] [Info] [Program]     CustomAttribute Analyzer finished in 243.0806ms
+[17:46:25.386] [Il2CppAssemblyGenerator] [Info] [Program]     Attribute Injector...
+[17:46:25.867] [Il2CppAssemblyGenerator] [Info] [Program]     Attribute Injector finished in 481.2137ms
+[17:46:25.867] [Il2CppAssemblyGenerator] [Info] [Program] Outputting as DLL output format for backwards compatibility. to D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\Il2CppAssemblyGenerator\Cpp2IL\cpp2il_out...
+[17:46:31.357] [Il2CppAssemblyGenerator] [Info] [Program] Finished outputting in 5489.6278ms
+[17:46:31.358] [Il2CppAssemblyGenerator] [Info] [Program] Done. Total execution time: 9297.5312ms
+[17:46:31.565] [Il2CppAssemblyGenerator] Reading dumped assemblies for interop generation...
+[17:46:31.805] [Il2CppAssemblyGenerator] Generating Interop Assemblies...
+[17:46:31.864] [Il2CppAssemblyGenerator] Reading assemblies...
+[17:46:31.992] [Il2CppAssemblyGenerator] Done in 00:00:00.1213994
+[17:46:31.993] [Il2CppAssemblyGenerator] Reading unity assemblies...
+[17:46:44.674] [Il2CppAssemblyGenerator] Done in 00:00:12.6795386
+[17:46:44.674] [Il2CppAssemblyGenerator] Creating rewrite assemblies...
+[17:46:44.709] [Il2CppAssemblyGenerator] Done in 00:00:00.0337064
+[17:46:44.709] [Il2CppAssemblyGenerator] Computing renames...
+[17:46:44.825] [Il2CppAssemblyGenerator] Done in 00:00:00.1153570
+[17:46:44.826] [Il2CppAssemblyGenerator] Creating typedefs...
+[17:46:44.895] [Il2CppAssemblyGenerator] Done in 00:00:00.0684926
+[17:46:44.895] [Il2CppAssemblyGenerator] Computing struct blittability...
+[17:46:45.063] [Il2CppAssemblyGenerator] Done in 00:00:00.1673303
+[17:46:45.063] [Il2CppAssemblyGenerator] Filling typedefs...
+[17:46:45.186] [Il2CppAssemblyGenerator] Done in 00:00:00.1219080
+[17:46:45.186] [Il2CppAssemblyGenerator] Filling generic constraints...
+[17:46:45.217] [Il2CppAssemblyGenerator] Done in 00:00:00.0305570
+[17:46:45.218] [Il2CppAssemblyGenerator] Creating members...
+[17:46:47.406] [Il2CppAssemblyGenerator] Done in 00:00:02.1871599
+[17:46:47.406] [Il2CppAssemblyGenerator] Scanning method cross-references...
+[17:46:48.898] [Il2CppAssemblyGenerator] Done in 00:00:01.4917090
+[17:46:48.898] [Il2CppAssemblyGenerator] Finalizing method declarations...
+[17:46:54.326] [Il2CppAssemblyGenerator] Done in 00:00:05.4274533
+[17:46:54.327] [Il2CppAssemblyGenerator] 101 total potentially dead methods
+[17:46:54.327] [Il2CppAssemblyGenerator] Filling method parameters...
+[17:46:55.870] [Il2CppAssemblyGenerator] Done in 00:00:01.5422630
+[17:46:55.870] [Il2CppAssemblyGenerator] Creating static constructors...
+[17:46:57.369] [Il2CppAssemblyGenerator] Done in 00:00:01.4982451
+[17:46:57.369] [Il2CppAssemblyGenerator] Creating value type fields...
+[17:46:57.438] [Il2CppAssemblyGenerator] Done in 00:00:00.0675581
+[17:46:57.438] [Il2CppAssemblyGenerator] Creating enums...
+[17:46:57.616] [Il2CppAssemblyGenerator] Done in 00:00:00.1775348
+[17:46:57.616] [Il2CppAssemblyGenerator] Creating IntPtr constructors...
+[17:46:57.681] [Il2CppAssemblyGenerator] Done in 00:00:00.0641278
+[17:46:57.681] [Il2CppAssemblyGenerator] Creating non-blittable struct constructors...
+[17:46:57.738] [Il2CppAssemblyGenerator] Done in 00:00:00.0562887
+[17:46:57.739] [Il2CppAssemblyGenerator] Creating generic method static constructors...
+[17:46:57.823] [Il2CppAssemblyGenerator] Done in 00:00:00.0841988
+[17:46:57.824] [Il2CppAssemblyGenerator] Creating field accessors...
+[17:47:00.523] [Il2CppAssemblyGenerator] Done in 00:00:02.6981596
+[17:47:00.523] [Il2CppAssemblyGenerator] Filling methods...
+[17:47:03.542] [Il2CppAssemblyGenerator] Done in 00:00:03.0179237
+[17:47:03.543] [Il2CppAssemblyGenerator] Generating implicit conversions...
+[17:47:03.592] [Il2CppAssemblyGenerator] Done in 00:00:00.0489916
+[17:47:03.592] [Il2CppAssemblyGenerator] Implementing awaiters...
+[17:47:03.655] [Il2CppAssemblyGenerator] Type Unity.Services.Core.Internal.TaskAsyncOperation was found to implement INotifyCompletion, but no suitable method was found. 0 method(s) were found with the required name.
+[17:47:03.658] [Il2CppAssemblyGenerator] Done in 00:00:00.0642834
+[17:47:03.658] [Il2CppAssemblyGenerator] Creating properties...
+[17:47:04.117] [Il2CppAssemblyGenerator] Done in 00:00:00.4593550
+[17:47:04.118] [Il2CppAssemblyGenerator] Unstripping types...
+[17:47:04.320] [Il2CppAssemblyGenerator] Done in 00:00:00.2013590
+[17:47:04.320] [Il2CppAssemblyGenerator] Unstripping fields...
+[17:47:04.366] [Il2CppAssemblyGenerator] Restored 653 fields
+[17:47:04.366] [Il2CppAssemblyGenerator] Failed to restore 21 fields
+[17:47:04.367] [Il2CppAssemblyGenerator] Done in 00:00:00.0468679
+[17:47:04.368] [Il2CppAssemblyGenerator] Unstripping methods...
+[17:47:05.900] [Il2CppAssemblyGenerator] Restored 23971 methods
+[17:47:05.900] [Il2CppAssemblyGenerator] Failed to restore 2081 methods
+[17:47:05.900] [Il2CppAssemblyGenerator] Done in 00:00:01.5328295
+[17:47:05.901] [Il2CppAssemblyGenerator] Unstripping method bodies...
+[17:47:07.570] [Il2CppAssemblyGenerator] IL unstrip statistics: 14715 successful, 2543 failed
+[17:47:07.570] [Il2CppAssemblyGenerator] Done in 00:00:01.6694867
+[17:47:07.571] [Il2CppAssemblyGenerator] Writing xref cache...
+[17:47:09.577] [Il2CppAssemblyGenerator] Done in 00:00:02.0065723
+[17:47:09.578] [Il2CppAssemblyGenerator] Writing assemblies...
+[17:47:22.964] [Il2CppAssemblyGenerator] Done in 00:00:13.3845168
+[17:47:22.964] [Il2CppAssemblyGenerator] Writing method pointer map...
+[17:47:23.023] [Il2CppAssemblyGenerator] Done in 00:00:00.0572773
+[17:47:23.023] [Il2CppAssemblyGenerator] Clearing static data...
+[17:47:23.024] [Il2CppAssemblyGenerator] Done in 00:00:00.0000292
+[17:47:23.024] [Il2CppAssemblyGenerator] Done!
+[17:47:23.026] [Il2CppAssemblyGenerator] Cleaning up...
+[17:47:23.026] [Il2CppAssemblyGenerator] Interop Generation Complete!
+[17:47:23.043] [Il2CppAssemblyGenerator] Deleting Assembly-CSharp-firstpass.dll
+[17:47:23.045] [Il2CppAssemblyGenerator] Deleting Assembly-CSharp.dll
+[17:47:23.046] [Il2CppAssemblyGenerator] Deleting Il2Cppcom.rlabrecque.steamworks.net.dll
+[17:47:23.047] [Il2CppAssemblyGenerator] Deleting Il2CppFMODUnity.dll
+[17:47:23.047] [Il2CppAssemblyGenerator] Deleting Il2CppFMODUnityHaptics.dll
+[17:47:23.047] [Il2CppAssemblyGenerator] Deleting Il2CppFMODUnityResonance.dll
+[17:47:23.047] [Il2CppAssemblyGenerator] Deleting Il2CppHeathen.Steamworks.dll
+[17:47:23.048] [Il2CppAssemblyGenerator] Deleting Il2CppHTraceAO.dll
+[17:47:23.048] [Il2CppAssemblyGenerator] Deleting Il2CppInputGlyphs.Display.dll
+[17:47:23.049] [Il2CppAssemblyGenerator] Deleting Il2CppInputGlyphs.dll
+[17:47:23.049] [Il2CppAssemblyGenerator] Deleting Il2CppInputGlyphs.Loaders.dll
+[17:47:23.050] [Il2CppAssemblyGenerator] Deleting Il2CppInputGlyphs.Loaders.Steam.dll
+[17:47:23.051] [Il2CppAssemblyGenerator] Deleting Il2CppInputGlyphs.Sample.dll
+[17:47:23.051] [Il2CppAssemblyGenerator] Deleting Il2CppKamgam.SettingsGenerator.dll
+[17:47:23.052] [Il2CppAssemblyGenerator] Deleting Il2CppKamgam.SettingsGeneratorExamples.dll
+[17:47:23.052] [Il2CppAssemblyGenerator] Deleting Il2CppKamgam.UGUIComponentsForSettings.dll
+[17:47:23.052] [Il2CppAssemblyGenerator] Deleting Il2CppKamgam.UIToolkitComponentsForSettings.dll
+[17:47:23.052] [Il2CppAssemblyGenerator] Deleting Il2CppLocalizationsForSettings.dll
+[17:47:23.053] [Il2CppAssemblyGenerator] Deleting Il2CppLofelt.NiceVibrations.Demo.dll
+[17:47:23.053] [Il2CppAssemblyGenerator] Deleting Il2CppLofelt.NiceVibrations.dll
+[17:47:23.053] [Il2CppAssemblyGenerator] Deleting Il2CppMono.Security.dll
+[17:47:23.053] [Il2CppAssemblyGenerator] Deleting Il2CppMoreMountains.Tools.dll
+[17:47:23.054] [Il2CppAssemblyGenerator] Deleting Il2Cppmscorlib.dll
+[17:47:23.054] [Il2CppAssemblyGenerator] Deleting Il2CppNativeCursor.Examples.dll
+[17:47:23.055] [Il2CppAssemblyGenerator] Deleting Il2CppNativeCursor.Runtime.dll
+[17:47:23.055] [Il2CppAssemblyGenerator] Deleting Il2CppNewtonsoft.Json.dll
+[17:47:23.055] [Il2CppAssemblyGenerator] Deleting Il2CppPerfectCullingRuntime.dll
+[17:47:23.055] [Il2CppAssemblyGenerator] Deleting Il2CppShapesRuntime.dll
+[17:47:23.056] [Il2CppAssemblyGenerator] Deleting Il2CppShapesSamples.dll
+[17:47:23.056] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Configuration.dll
+[17:47:23.056] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Core.dll
+[17:47:23.056] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Data.dll
+[17:47:23.057] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.dll
+[17:47:23.057] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Drawing.dll
+[17:47:23.060] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.IO.Compression.dll
+[17:47:23.061] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Net.Http.dll
+[17:47:23.061] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Numerics.dll
+[17:47:23.061] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Runtime.Serialization.dll
+[17:47:23.061] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Xml.dll
+[17:47:23.061] [Il2CppAssemblyGenerator] Deleting Il2CppSystem.Xml.Linq.dll
+[17:47:23.062] [Il2CppAssemblyGenerator] Deleting Il2Cpp__Generated.dll
+[17:47:23.062] [Il2CppAssemblyGenerator] Deleting MethodAddressToToken.db
+[17:47:23.062] [Il2CppAssemblyGenerator] Deleting MethodXrefScanCache.db
+[17:47:23.072] [Il2CppAssemblyGenerator] Deleting Unity.Burst.dll
+[17:47:23.082] [Il2CppAssemblyGenerator] Deleting Unity.Burst.Unsafe.dll
+[17:47:23.083] [Il2CppAssemblyGenerator] Deleting Unity.Cinemachine.dll
+[17:47:23.084] [Il2CppAssemblyGenerator] Deleting Unity.Collections.dll
+[17:47:23.084] [Il2CppAssemblyGenerator] Deleting Unity.Collections.LowLevel.ILSupport.dll
+[17:47:23.084] [Il2CppAssemblyGenerator] Deleting Unity.InputSystem.dll
+[17:47:23.084] [Il2CppAssemblyGenerator] Deleting Unity.InputSystem.ForUI.dll
+[17:47:23.085] [Il2CppAssemblyGenerator] Deleting Unity.InternalAPIEngineBridge.004.dll
+[17:47:23.085] [Il2CppAssemblyGenerator] Deleting Unity.Mathematics.dll
+[17:47:23.085] [Il2CppAssemblyGenerator] Deleting Unity.Postprocessing.Runtime.dll
+[17:47:23.085] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipeline.Universal.ShaderLibrary.dll
+[17:47:23.086] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipelines.Core.Runtime.dll
+[17:47:23.086] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipelines.Core.Runtime.Shared.dll
+[17:47:23.086] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipelines.GPUDriven.Runtime.dll
+[17:47:23.087] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipelines.Universal.2D.Runtime.dll
+[17:47:23.087] [Il2CppAssemblyGenerator] Deleting Unity.RenderPipelines.Universal.Runtime.dll
+[17:47:23.089] [Il2CppAssemblyGenerator] Deleting Unity.Services.Analytics.dll
+[17:47:23.090] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Configuration.dll
+[17:47:23.090] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Device.dll
+[17:47:23.090] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.dll
+[17:47:23.090] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Environments.dll
+[17:47:23.091] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Environments.Internal.dll
+[17:47:23.091] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Internal.dll
+[17:47:23.092] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Registration.dll
+[17:47:23.092] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Scheduler.dll
+[17:47:23.093] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Telemetry.dll
+[17:47:23.093] [Il2CppAssemblyGenerator] Deleting Unity.Services.Core.Threading.dll
+[17:47:23.093] [Il2CppAssemblyGenerator] Deleting Unity.Splines.dll
+[17:47:23.093] [Il2CppAssemblyGenerator] Deleting Unity.TextMeshPro.dll
+[17:47:23.094] [Il2CppAssemblyGenerator] Deleting Unity.Timeline.dll
+[17:47:23.094] [Il2CppAssemblyGenerator] Deleting Unity.UnifiedRayTracing.Runtime.dll
+[17:47:23.094] [Il2CppAssemblyGenerator] Deleting UnityEngine.AccessibilityModule.dll
+[17:47:23.095] [Il2CppAssemblyGenerator] Deleting UnityEngine.AdaptivePerformanceModule.dll
+[17:47:23.095] [Il2CppAssemblyGenerator] Deleting UnityEngine.AIModule.dll
+[17:47:23.095] [Il2CppAssemblyGenerator] Deleting UnityEngine.AndroidJNIModule.dll
+[17:47:23.096] [Il2CppAssemblyGenerator] Deleting UnityEngine.AnimationModule.dll
+[17:47:23.096] [Il2CppAssemblyGenerator] Deleting UnityEngine.ARModule.dll
+[17:47:23.096] [Il2CppAssemblyGenerator] Deleting UnityEngine.AssetBundleModule.dll
+[17:47:23.096] [Il2CppAssemblyGenerator] Deleting UnityEngine.AudioModule.dll
+[17:47:23.097] [Il2CppAssemblyGenerator] Deleting UnityEngine.ClothModule.dll
+[17:47:23.097] [Il2CppAssemblyGenerator] Deleting UnityEngine.ContentLoadModule.dll
+[17:47:23.097] [Il2CppAssemblyGenerator] Deleting UnityEngine.CoreModule.dll
+[17:47:23.097] [Il2CppAssemblyGenerator] Deleting UnityEngine.CrashReportingModule.dll
+[17:47:23.098] [Il2CppAssemblyGenerator] Deleting UnityEngine.DirectorModule.dll
+[17:47:23.098] [Il2CppAssemblyGenerator] Deleting UnityEngine.dll
+[17:47:23.098] [Il2CppAssemblyGenerator] Deleting UnityEngine.DSPGraphModule.dll
+[17:47:23.098] [Il2CppAssemblyGenerator] Deleting UnityEngine.GameCenterModule.dll
+[17:47:23.099] [Il2CppAssemblyGenerator] Deleting UnityEngine.GIModule.dll
+[17:47:23.100] [Il2CppAssemblyGenerator] Deleting UnityEngine.GraphicsStateCollectionSerializerModule.dll
+[17:47:23.100] [Il2CppAssemblyGenerator] Deleting UnityEngine.GridModule.dll
+[17:47:23.100] [Il2CppAssemblyGenerator] Deleting UnityEngine.HierarchyCoreModule.dll
+[17:47:23.100] [Il2CppAssemblyGenerator] Deleting UnityEngine.HierarchyModule.dll
+[17:47:23.101] [Il2CppAssemblyGenerator] Deleting UnityEngine.HotReloadModule.dll
+[17:47:23.101] [Il2CppAssemblyGenerator] Deleting UnityEngine.IdentifiersModule.dll
+[17:47:23.101] [Il2CppAssemblyGenerator] Deleting UnityEngine.ImageConversionModule.dll
+[17:47:23.101] [Il2CppAssemblyGenerator] Deleting UnityEngine.IMGUIModule.dll
+[17:47:23.101] [Il2CppAssemblyGenerator] Deleting UnityEngine.InputForUIModule.dll
+[17:47:23.102] [Il2CppAssemblyGenerator] Deleting UnityEngine.InputLegacyModule.dll
+[17:47:23.102] [Il2CppAssemblyGenerator] Deleting UnityEngine.InputModule.dll
+[17:47:23.102] [Il2CppAssemblyGenerator] Deleting UnityEngine.InsightsModule.dll
+[17:47:23.102] [Il2CppAssemblyGenerator] Deleting UnityEngine.JSONSerializeModule.dll
+[17:47:23.102] [Il2CppAssemblyGenerator] Deleting UnityEngine.LocalizationModule.dll
+[17:47:23.103] [Il2CppAssemblyGenerator] Deleting UnityEngine.MarshallingModule.dll
+[17:47:23.106] [Il2CppAssemblyGenerator] Deleting UnityEngine.MultiplayerModule.dll
+[17:47:23.107] [Il2CppAssemblyGenerator] Deleting UnityEngine.ParticleSystemModule.dll
+[17:47:23.107] [Il2CppAssemblyGenerator] Deleting UnityEngine.PerformanceReportingModule.dll
+[17:47:23.107] [Il2CppAssemblyGenerator] Deleting UnityEngine.Physics2DModule.dll
+[17:47:23.107] [Il2CppAssemblyGenerator] Deleting UnityEngine.PhysicsBackendPhysXModule.dll
+[17:47:23.107] [Il2CppAssemblyGenerator] Deleting UnityEngine.PhysicsModule.dll
+[17:47:23.108] [Il2CppAssemblyGenerator] Deleting UnityEngine.PropertiesModule.dll
+[17:47:23.108] [Il2CppAssemblyGenerator] Deleting UnityEngine.RenderAs2DModule.dll
+[17:47:23.108] [Il2CppAssemblyGenerator] Deleting UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+[17:47:23.109] [Il2CppAssemblyGenerator] Deleting UnityEngine.ScreenCaptureModule.dll
+[17:47:23.109] [Il2CppAssemblyGenerator] Deleting UnityEngine.ShaderRuntimeModule.dll
+[17:47:23.109] [Il2CppAssemblyGenerator] Deleting UnityEngine.ShaderVariantAnalyticsModule.dll
+[17:47:23.109] [Il2CppAssemblyGenerator] Deleting UnityEngine.SharedInternalsModule.dll
+[17:47:23.109] [Il2CppAssemblyGenerator] Deleting UnityEngine.SpriteMaskModule.dll
+[17:47:23.110] [Il2CppAssemblyGenerator] Deleting UnityEngine.SpriteShapeModule.dll
+[17:47:23.110] [Il2CppAssemblyGenerator] Deleting UnityEngine.StreamingModule.dll
+[17:47:23.110] [Il2CppAssemblyGenerator] Deleting UnityEngine.SubstanceModule.dll
+[17:47:23.110] [Il2CppAssemblyGenerator] Deleting UnityEngine.SubsystemsModule.dll
+[17:47:23.111] [Il2CppAssemblyGenerator] Deleting UnityEngine.TerrainModule.dll
+[17:47:23.111] [Il2CppAssemblyGenerator] Deleting UnityEngine.TerrainPhysicsModule.dll
+[17:47:23.111] [Il2CppAssemblyGenerator] Deleting UnityEngine.TextCoreFontEngineModule.dll
+[17:47:23.112] [Il2CppAssemblyGenerator] Deleting UnityEngine.TextCoreTextEngineModule.dll
+[17:47:23.112] [Il2CppAssemblyGenerator] Deleting UnityEngine.TextRenderingModule.dll
+[17:47:23.112] [Il2CppAssemblyGenerator] Deleting UnityEngine.TilemapModule.dll
+[17:47:23.113] [Il2CppAssemblyGenerator] Deleting UnityEngine.TLSModule.dll
+[17:47:23.113] [Il2CppAssemblyGenerator] Deleting UnityEngine.UI.dll
+[17:47:23.113] [Il2CppAssemblyGenerator] Deleting UnityEngine.UIElementsModule.dll
+[17:47:23.113] [Il2CppAssemblyGenerator] Deleting UnityEngine.UIModule.dll
+[17:47:23.113] [Il2CppAssemblyGenerator] Deleting UnityEngine.UmbraModule.dll
+[17:47:23.114] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityAnalyticsCommonModule.dll
+[17:47:23.114] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityAnalyticsModule.dll
+[17:47:23.114] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityConnectModule.dll
+[17:47:23.114] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityConsentModule.dll
+[17:47:23.115] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityCurlModule.dll
+[17:47:23.115] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityWebRequestAssetBundleModule.dll
+[17:47:23.115] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityWebRequestAudioModule.dll
+[17:47:23.115] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityWebRequestModule.dll
+[17:47:23.116] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityWebRequestTextureModule.dll
+[17:47:23.116] [Il2CppAssemblyGenerator] Deleting UnityEngine.UnityWebRequestWWWModule.dll
+[17:47:23.116] [Il2CppAssemblyGenerator] Deleting UnityEngine.VectorGraphicsModule.dll
+[17:47:23.116] [Il2CppAssemblyGenerator] Deleting UnityEngine.VehiclesModule.dll
+[17:47:23.116] [Il2CppAssemblyGenerator] Deleting UnityEngine.VFXModule.dll
+[17:47:23.117] [Il2CppAssemblyGenerator] Deleting UnityEngine.VideoModule.dll
+[17:47:23.117] [Il2CppAssemblyGenerator] Deleting UnityEngine.VRModule.dll
+[17:47:23.117] [Il2CppAssemblyGenerator] Deleting UnityEngine.WindModule.dll
+[17:47:23.117] [Il2CppAssemblyGenerator] Deleting UnityEngine.XRModule.dll
+[17:47:23.174] [Il2CppAssemblyGenerator] Moving Assembly-CSharp-firstpass.dll
+[17:47:23.175] [Il2CppAssemblyGenerator] Moving Assembly-CSharp.dll
+[17:47:23.176] [Il2CppAssemblyGenerator] Moving Il2Cppcom.rlabrecque.steamworks.net.dll
+[17:47:23.176] [Il2CppAssemblyGenerator] Moving Il2CppFMODUnity.dll
+[17:47:23.177] [Il2CppAssemblyGenerator] Moving Il2CppFMODUnityHaptics.dll
+[17:47:23.177] [Il2CppAssemblyGenerator] Moving Il2CppFMODUnityResonance.dll
+[17:47:23.177] [Il2CppAssemblyGenerator] Moving Il2CppHeathen.Steamworks.dll
+[17:47:23.178] [Il2CppAssemblyGenerator] Moving Il2CppHTraceAO.dll
+[17:47:23.178] [Il2CppAssemblyGenerator] Moving Il2CppInputGlyphs.Display.dll
+[17:47:23.179] [Il2CppAssemblyGenerator] Moving Il2CppInputGlyphs.dll
+[17:47:23.179] [Il2CppAssemblyGenerator] Moving Il2CppInputGlyphs.Loaders.dll
+[17:47:23.180] [Il2CppAssemblyGenerator] Moving Il2CppInputGlyphs.Loaders.Steam.dll
+[17:47:23.180] [Il2CppAssemblyGenerator] Moving Il2CppInputGlyphs.Sample.dll
+[17:47:23.180] [Il2CppAssemblyGenerator] Moving Il2CppKamgam.SettingsGenerator.dll
+[17:47:23.181] [Il2CppAssemblyGenerator] Moving Il2CppKamgam.SettingsGeneratorExamples.dll
+[17:47:23.181] [Il2CppAssemblyGenerator] Moving Il2CppKamgam.UGUIComponentsForSettings.dll
+[17:47:23.182] [Il2CppAssemblyGenerator] Moving Il2CppKamgam.UIToolkitComponentsForSettings.dll
+[17:47:23.182] [Il2CppAssemblyGenerator] Moving Il2CppLocalizationsForSettings.dll
+[17:47:23.183] [Il2CppAssemblyGenerator] Moving Il2CppLofelt.NiceVibrations.Demo.dll
+[17:47:23.183] [Il2CppAssemblyGenerator] Moving Il2CppLofelt.NiceVibrations.dll
+[17:47:23.183] [Il2CppAssemblyGenerator] Moving Il2CppMono.Security.dll
+[17:47:23.184] [Il2CppAssemblyGenerator] Moving Il2CppMoreMountains.Tools.dll
+[17:47:23.184] [Il2CppAssemblyGenerator] Moving Il2Cppmscorlib.dll
+[17:47:23.184] [Il2CppAssemblyGenerator] Moving Il2CppNativeCursor.Examples.dll
+[17:47:23.184] [Il2CppAssemblyGenerator] Moving Il2CppNativeCursor.Runtime.dll
+[17:47:23.185] [Il2CppAssemblyGenerator] Moving Il2CppNewtonsoft.Json.dll
+[17:47:23.186] [Il2CppAssemblyGenerator] Moving Il2CppPerfectCullingRuntime.dll
+[17:47:23.186] [Il2CppAssemblyGenerator] Moving Il2CppShapesRuntime.dll
+[17:47:23.186] [Il2CppAssemblyGenerator] Moving Il2CppShapesSamples.dll
+[17:47:23.187] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Configuration.dll
+[17:47:23.187] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Core.dll
+[17:47:23.187] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Data.dll
+[17:47:23.188] [Il2CppAssemblyGenerator] Moving Il2CppSystem.dll
+[17:47:23.188] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Drawing.dll
+[17:47:23.188] [Il2CppAssemblyGenerator] Moving Il2CppSystem.IO.Compression.dll
+[17:47:23.189] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Net.Http.dll
+[17:47:23.189] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Numerics.dll
+[17:47:23.189] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Runtime.Serialization.dll
+[17:47:23.189] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Xml.dll
+[17:47:23.190] [Il2CppAssemblyGenerator] Moving Il2CppSystem.Xml.Linq.dll
+[17:47:23.190] [Il2CppAssemblyGenerator] Moving Il2Cpp__Generated.dll
+[17:47:23.191] [Il2CppAssemblyGenerator] Moving MethodAddressToToken.db
+[17:47:23.191] [Il2CppAssemblyGenerator] Moving MethodXrefScanCache.db
+[17:47:23.191] [Il2CppAssemblyGenerator] Moving Unity.Burst.dll
+[17:47:23.192] [Il2CppAssemblyGenerator] Moving Unity.Burst.Unsafe.dll
+[17:47:23.192] [Il2CppAssemblyGenerator] Moving Unity.Cinemachine.dll
+[17:47:23.192] [Il2CppAssemblyGenerator] Moving Unity.Collections.dll
+[17:47:23.193] [Il2CppAssemblyGenerator] Moving Unity.Collections.LowLevel.ILSupport.dll
+[17:47:23.193] [Il2CppAssemblyGenerator] Moving Unity.InputSystem.dll
+[17:47:23.193] [Il2CppAssemblyGenerator] Moving Unity.InputSystem.ForUI.dll
+[17:47:23.194] [Il2CppAssemblyGenerator] Moving Unity.InternalAPIEngineBridge.004.dll
+[17:47:23.194] [Il2CppAssemblyGenerator] Moving Unity.Mathematics.dll
+[17:47:23.195] [Il2CppAssemblyGenerator] Moving Unity.Postprocessing.Runtime.dll
+[17:47:23.195] [Il2CppAssemblyGenerator] Moving Unity.RenderPipeline.Universal.ShaderLibrary.dll
+[17:47:23.195] [Il2CppAssemblyGenerator] Moving Unity.RenderPipelines.Core.Runtime.dll
+[17:47:23.196] [Il2CppAssemblyGenerator] Moving Unity.RenderPipelines.Core.Runtime.Shared.dll
+[17:47:23.196] [Il2CppAssemblyGenerator] Moving Unity.RenderPipelines.GPUDriven.Runtime.dll
+[17:47:23.196] [Il2CppAssemblyGenerator] Moving Unity.RenderPipelines.Universal.2D.Runtime.dll
+[17:47:23.199] [Il2CppAssemblyGenerator] Moving Unity.RenderPipelines.Universal.Runtime.dll
+[17:47:23.200] [Il2CppAssemblyGenerator] Moving Unity.Services.Analytics.dll
+[17:47:23.200] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Configuration.dll
+[17:47:23.201] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Device.dll
+[17:47:23.202] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.dll
+[17:47:23.202] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Environments.dll
+[17:47:23.203] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Environments.Internal.dll
+[17:47:23.203] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Internal.dll
+[17:47:23.203] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Registration.dll
+[17:47:23.204] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Scheduler.dll
+[17:47:23.204] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Telemetry.dll
+[17:47:23.204] [Il2CppAssemblyGenerator] Moving Unity.Services.Core.Threading.dll
+[17:47:23.205] [Il2CppAssemblyGenerator] Moving Unity.Splines.dll
+[17:47:23.205] [Il2CppAssemblyGenerator] Moving Unity.TextMeshPro.dll
+[17:47:23.206] [Il2CppAssemblyGenerator] Moving Unity.Timeline.dll
+[17:47:23.206] [Il2CppAssemblyGenerator] Moving Unity.UnifiedRayTracing.Runtime.dll
+[17:47:23.206] [Il2CppAssemblyGenerator] Moving UnityEngine.AccessibilityModule.dll
+[17:47:23.207] [Il2CppAssemblyGenerator] Moving UnityEngine.AdaptivePerformanceModule.dll
+[17:47:23.207] [Il2CppAssemblyGenerator] Moving UnityEngine.AIModule.dll
+[17:47:23.207] [Il2CppAssemblyGenerator] Moving UnityEngine.AndroidJNIModule.dll
+[17:47:23.208] [Il2CppAssemblyGenerator] Moving UnityEngine.AnimationModule.dll
+[17:47:23.208] [Il2CppAssemblyGenerator] Moving UnityEngine.ARModule.dll
+[17:47:23.208] [Il2CppAssemblyGenerator] Moving UnityEngine.AssetBundleModule.dll
+[17:47:23.209] [Il2CppAssemblyGenerator] Moving UnityEngine.AudioModule.dll
+[17:47:23.209] [Il2CppAssemblyGenerator] Moving UnityEngine.ClothModule.dll
+[17:47:23.209] [Il2CppAssemblyGenerator] Moving UnityEngine.ContentLoadModule.dll
+[17:47:23.210] [Il2CppAssemblyGenerator] Moving UnityEngine.CoreModule.dll
+[17:47:23.210] [Il2CppAssemblyGenerator] Moving UnityEngine.CrashReportingModule.dll
+[17:47:23.228] [Il2CppAssemblyGenerator] Moving UnityEngine.DirectorModule.dll
+[17:47:23.229] [Il2CppAssemblyGenerator] Moving UnityEngine.dll
+[17:47:23.230] [Il2CppAssemblyGenerator] Moving UnityEngine.DSPGraphModule.dll
+[17:47:23.230] [Il2CppAssemblyGenerator] Moving UnityEngine.GameCenterModule.dll
+[17:47:23.231] [Il2CppAssemblyGenerator] Moving UnityEngine.GIModule.dll
+[17:47:23.231] [Il2CppAssemblyGenerator] Moving UnityEngine.GraphicsStateCollectionSerializerModule.dll
+[17:47:23.231] [Il2CppAssemblyGenerator] Moving UnityEngine.GridModule.dll
+[17:47:23.232] [Il2CppAssemblyGenerator] Moving UnityEngine.HierarchyCoreModule.dll
+[17:47:23.232] [Il2CppAssemblyGenerator] Moving UnityEngine.HierarchyModule.dll
+[17:47:23.232] [Il2CppAssemblyGenerator] Moving UnityEngine.HotReloadModule.dll
+[17:47:23.233] [Il2CppAssemblyGenerator] Moving UnityEngine.IdentifiersModule.dll
+[17:47:23.233] [Il2CppAssemblyGenerator] Moving UnityEngine.ImageConversionModule.dll
+[17:47:23.233] [Il2CppAssemblyGenerator] Moving UnityEngine.IMGUIModule.dll
+[17:47:23.233] [Il2CppAssemblyGenerator] Moving UnityEngine.InputForUIModule.dll
+[17:47:23.234] [Il2CppAssemblyGenerator] Moving UnityEngine.InputLegacyModule.dll
+[17:47:23.234] [Il2CppAssemblyGenerator] Moving UnityEngine.InputModule.dll
+[17:47:23.234] [Il2CppAssemblyGenerator] Moving UnityEngine.InsightsModule.dll
+[17:47:23.235] [Il2CppAssemblyGenerator] Moving UnityEngine.JSONSerializeModule.dll
+[17:47:23.235] [Il2CppAssemblyGenerator] Moving UnityEngine.LocalizationModule.dll
+[17:47:23.235] [Il2CppAssemblyGenerator] Moving UnityEngine.MarshallingModule.dll
+[17:47:23.236] [Il2CppAssemblyGenerator] Moving UnityEngine.MultiplayerModule.dll
+[17:47:23.236] [Il2CppAssemblyGenerator] Moving UnityEngine.ParticleSystemModule.dll
+[17:47:23.237] [Il2CppAssemblyGenerator] Moving UnityEngine.PerformanceReportingModule.dll
+[17:47:23.237] [Il2CppAssemblyGenerator] Moving UnityEngine.Physics2DModule.dll
+[17:47:23.237] [Il2CppAssemblyGenerator] Moving UnityEngine.PhysicsBackendPhysXModule.dll
+[17:47:23.237] [Il2CppAssemblyGenerator] Moving UnityEngine.PhysicsModule.dll
+[17:47:23.238] [Il2CppAssemblyGenerator] Moving UnityEngine.PropertiesModule.dll
+[17:47:23.239] [Il2CppAssemblyGenerator] Moving UnityEngine.RenderAs2DModule.dll
+[17:47:23.239] [Il2CppAssemblyGenerator] Moving UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll
+[17:47:23.239] [Il2CppAssemblyGenerator] Moving UnityEngine.ScreenCaptureModule.dll
+[17:47:23.240] [Il2CppAssemblyGenerator] Moving UnityEngine.ShaderRuntimeModule.dll
+[17:47:23.240] [Il2CppAssemblyGenerator] Moving UnityEngine.ShaderVariantAnalyticsModule.dll
+[17:47:23.240] [Il2CppAssemblyGenerator] Moving UnityEngine.SharedInternalsModule.dll
+[17:47:23.240] [Il2CppAssemblyGenerator] Moving UnityEngine.SpriteMaskModule.dll
+[17:47:23.241] [Il2CppAssemblyGenerator] Moving UnityEngine.SpriteShapeModule.dll
+[17:47:23.241] [Il2CppAssemblyGenerator] Moving UnityEngine.StreamingModule.dll
+[17:47:23.241] [Il2CppAssemblyGenerator] Moving UnityEngine.SubstanceModule.dll
+[17:47:23.242] [Il2CppAssemblyGenerator] Moving UnityEngine.SubsystemsModule.dll
+[17:47:23.242] [Il2CppAssemblyGenerator] Moving UnityEngine.TerrainModule.dll
+[17:47:23.242] [Il2CppAssemblyGenerator] Moving UnityEngine.TerrainPhysicsModule.dll
+[17:47:23.243] [Il2CppAssemblyGenerator] Moving UnityEngine.TextCoreFontEngineModule.dll
+[17:47:23.243] [Il2CppAssemblyGenerator] Moving UnityEngine.TextCoreTextEngineModule.dll
+[17:47:23.243] [Il2CppAssemblyGenerator] Moving UnityEngine.TextRenderingModule.dll
+[17:47:23.246] [Il2CppAssemblyGenerator] Moving UnityEngine.TilemapModule.dll
+[17:47:23.247] [Il2CppAssemblyGenerator] Moving UnityEngine.TLSModule.dll
+[17:47:23.247] [Il2CppAssemblyGenerator] Moving UnityEngine.UI.dll
+[17:47:23.248] [Il2CppAssemblyGenerator] Moving UnityEngine.UIElementsModule.dll
+[17:47:23.248] [Il2CppAssemblyGenerator] Moving UnityEngine.UIModule.dll
+[17:47:23.248] [Il2CppAssemblyGenerator] Moving UnityEngine.UmbraModule.dll
+[17:47:23.249] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityAnalyticsCommonModule.dll
+[17:47:23.249] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityAnalyticsModule.dll
+[17:47:23.249] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityConnectModule.dll
+[17:47:23.250] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityConsentModule.dll
+[17:47:23.250] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityCurlModule.dll
+[17:47:23.250] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityWebRequestAssetBundleModule.dll
+[17:47:23.251] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityWebRequestAudioModule.dll
+[17:47:23.251] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityWebRequestModule.dll
+[17:47:23.252] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityWebRequestTextureModule.dll
+[17:47:23.252] [Il2CppAssemblyGenerator] Moving UnityEngine.UnityWebRequestWWWModule.dll
+[17:47:23.252] [Il2CppAssemblyGenerator] Moving UnityEngine.VectorGraphicsModule.dll
+[17:47:23.253] [Il2CppAssemblyGenerator] Moving UnityEngine.VehiclesModule.dll
+[17:47:23.253] [Il2CppAssemblyGenerator] Moving UnityEngine.VFXModule.dll
+[17:47:23.275] [Il2CppAssemblyGenerator] Moving UnityEngine.VideoModule.dll
+[17:47:23.276] [Il2CppAssemblyGenerator] Moving UnityEngine.VRModule.dll
+[17:47:23.277] [Il2CppAssemblyGenerator] Moving UnityEngine.WindModule.dll
+[17:47:23.277] [Il2CppAssemblyGenerator] Moving UnityEngine.XRModule.dll
+[17:47:23.388] [Il2CppAssemblyGenerator] Assembly Generation Successful!
+
+[17:47:23.390] Loading Mods...
+[17:47:23.785] ------------------------------
+[17:47:23.788] Melon Assembly loaded: '.\Mods\IronNestFCS.dll'
+[17:47:23.788] SHA256 Hash: 'CE58AEFD063028F5B32F9004E02A250DB0A324B57009693703310B4D68F48B86'
+[17:47:23.790] Melon Assembly loaded: '.\Mods\MapEnemyMarker.dll'
+[17:47:23.790] SHA256 Hash: '78879B6E8F14ACEE5128C6AF597AD807A43875B384C4BF27356CA6AC5B9B48D9'
+
+[17:47:24.155] ------------------------------
+[17:47:24.155] IronNestFCS v1.0.4
+[17:47:24.155] by svr2kos2
+[17:47:24.156] Assembly: IronNestFCS.dll
+[17:47:24.156] ------------------------------
+[17:47:24.160] ------------------------------
+[17:47:24.161] MapEnemyMarker v1.0.0
+[17:47:24.161] by Iron Nest
+[17:47:24.161] Assembly: MapEnemyMarker.dll
+[17:47:24.161] ------------------------------
+[17:47:24.161] ------------------------------
+[17:47:24.162] 2 Mods loaded.
+
+[17:47:29.002] [WARNING] [Il2CppInterop] Class::Init signatures have been exhausted, using a substitute!
+[17:47:29.114] [Il2CppInterop] Registered mono type MelonLoader.Support.MonoEnumeratorWrapper in il2cpp domain
+[17:47:29.306] Support Module Loaded: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\SupportModules\Il2Cpp.dll
+[17:47:29.379] IronNestFCS Host Started。Logic path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\UserData\IronNestFCS\IronNestFCS.Logic.dll
+[17:47:29.380] Press F9 to hot reload Logic.
+[17:47:31.539] [WARNING] [IronNestFCS] [FCS] 未找到 Player Turret Piece，当前场景尚未就绪
+[17:47:31.539] [IronNestFCS] [FCS] Initialize: failed
+[17:47:31.567] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[17:47:31.569] MapEnemyMarker loaded!
+[17:47:31.569] [MapEnemyMarker] Web root: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\火控计算机网页版
+[17:47:31.571] [MapEnemyMarker] HTTP server started on port 45678
+[17:47:31.590] [MapEnemyMarker] Successfully patched Time.frameCount
+[17:48:29.182] [Il2CppInterop] Registered mono type MelonLoader.Support.SM_Component in il2cpp domain
+[17:48:29.300] Registered mono icall UnityEngine.Transform::SetAsLastSibling in il2cpp domain
+[17:48:29.512] [MapEnemyMarker] [MapEnemyMarker] Found Assembly-CSharp with 1130 types
+[17:48:29.513] [MapEnemyMarker] [MapEnemyMarker] Could not find FireMission type, trying broad search...
+[17:48:29.513] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCard
+[17:48:29.532] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCardPrinter
+[17:48:29.533] [MapEnemyMarker]   Candidate: Il2Cpp.FireMission
+[17:48:29.535] [MapEnemyMarker]   Found: Il2Cpp.FireMission (Instance=Instance, Entities=Entities)
+[17:48:29.535] [MapEnemyMarker] [MapEnemyMarker] Reflection init:
+[17:48:29.535] [MapEnemyMarker]   Instance prop: True
+[17:48:29.535] [MapEnemyMarker]   Entities prop: True
+[17:48:29.535] [MapEnemyMarker]   EntityRoles: True
+[17:48:29.535] [MapEnemyMarker]   MapEntityStates: True
+[17:48:29.544] [MapEnemyMarker]     Role None = 0
+[17:48:29.544] [MapEnemyMarker]     Role Enemy = 1
+[17:48:29.544] [MapEnemyMarker]     Role Ally = 2
+[17:48:29.544] [MapEnemyMarker]     Role Spotter = 6
+[17:48:29.544] [MapEnemyMarker]     Role AllyGroup1 = 10
+[17:48:29.544] [MapEnemyMarker]     Role AllyGroup2 = 18
+[17:48:29.544] [MapEnemyMarker]     Role Target = 32
+[17:48:29.545] [MapEnemyMarker]     Role OptionalTarget = 64
+[17:48:29.545] [MapEnemyMarker]     Role EnemyGroup1 = 129
+[17:48:29.545] [MapEnemyMarker]     Role EnemyGroup2 = 257
+[17:48:29.545] [MapEnemyMarker]     Role EnemyGroup3 = 513
+[17:48:29.545] [MapEnemyMarker]     Role Artillery = 32768
+[17:48:29.545] [MapEnemyMarker]     Role Fortification = 65536
+[17:48:29.545] [MapEnemyMarker]     Role Infantry = 131072
+[17:48:29.545] [MapEnemyMarker]     Role Tank = 262144
+[17:48:29.545] [MapEnemyMarker]     Role ListeningPost = 524288
+[17:48:29.545] [MapEnemyMarker]     Role AABattery = 1048576
+[17:48:29.545] [MapEnemyMarker]     Role Reference = 33554432
+[17:48:46.865] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[17:48:46.866] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[17:48:46.867] [IronNestFCS] [FCS] Initialize: failed
+[17:48:46.867] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[17:48:47.147] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[17:48:47.149] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[17:48:47.149] [IronNestFCS] [FCS] Initialize: failed
+[17:48:47.149] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[17:48:51.422] [MapEnemyMarker]   [0] ID=spotter1, Name=Spotter#1, Role=Spotter, MapPos=(7.5, 5.9, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[17:48:51.422] [MapEnemyMarker]   [1] ID=spotter2, Name=Spotter#2, Role=Spotter, MapPos=(6.2, 3.8, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[17:48:51.424] [MapEnemyMarker]   [2] ID=spotter3, Name=Spotter#3, Role=Spotter, MapPos=(1.3, 5.0, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[17:48:52.190] [MapEnemyMarker] 35 enemies updated
+[17:48:53.164] [MapEnemyMarker] 35 enemies updated
+[17:48:54.069] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[17:48:54.206] [IronNestFCS] [FCS] PurchaseDeck: Found card APShell
+[17:48:54.207] [IronNestFCS] [FCS] PurchaseDeck: Found card HCHEShell
+[17:48:54.208] [IronNestFCS] [FCS] PurchaseDeck: Found card HEShell
+[17:48:54.208] [IronNestFCS] [FCS] PurchaseDeck: Found card SMOKEShell
+[17:48:54.208] [IronNestFCS] [FCS] PurchaseDeck: Found card STARShell
+[17:48:54.208] [IronNestFCS] [FCS] PurchaseDeck: Found card ScoutPlane
+[17:48:54.208] [IronNestFCS] [FCS] PurchaseDeck: Found card Spotter
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card MoveDirection
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card PowderCharges
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card PHGNShell
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card INCNShell
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card ATMCShell
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card CLMNShell
+[17:48:54.209] [IronNestFCS] [FCS] PurchaseDeck: Found card MSTDShell
+[17:48:54.210] [IronNestFCS] [FCS] PurchaseDeck: Found card PRPGShell
+[17:48:54.210] [IronNestFCS] [FCS] PurchaseDeck: Found card TEARShell
+[17:48:54.210] [IronNestFCS] [FCS] PurchaseDeck: Found card LocationReport
+[17:48:54.210] [IronNestFCS] [FCS] PurchaseDeck: Found card ScoutPlane_OnTimeUse
+[17:48:54.216] [IronNestFCS] [FCS] Initialize: success
+[17:48:54.217] [IronNestFCS] [Reload] Logic loaded and initialized successfully.
+[17:48:54.285] [MapEnemyMarker] 35 enemies updated
+[17:48:55.173] [MapEnemyMarker] 35 enemies updated
+[17:48:56.184] [MapEnemyMarker] 35 enemies updated
+[17:48:57.192] [MapEnemyMarker] 35 enemies updated
+[17:48:58.204] [MapEnemyMarker] 35 enemies updated
+[17:48:59.213] [MapEnemyMarker] 35 enemies updated
+[17:49:00.207] [MapEnemyMarker] 35 enemies updated
+[17:49:01.211] [MapEnemyMarker] 35 enemies updated
+[17:49:02.224] [MapEnemyMarker] 35 enemies updated
+[17:49:03.221] [MapEnemyMarker] 35 enemies updated
+[17:49:31.513] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:31.528] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: FireControlDirector#1, ammo=HCHE, autoFire=True, maxCharge=False, angle=61.4, distance=3.24
+[17:49:33.119] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:33.119] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: FireControlDirector#2, ammo=HCHE, autoFire=True, maxCharge=False, angle=84.3, distance=10.72
+[17:49:33.750] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:33.750] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: FireControlDirector#3, ammo=HCHE, autoFire=True, maxCharge=False, angle=124.2, distance=4.32
+[17:49:34.189] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:34.189] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: AmmoCache#1, ammo=HCHE, autoFire=True, maxCharge=False, angle=71.1, distance=10.10
+[17:49:34.702] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:34.702] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: AmmoCache#2, ammo=HCHE, autoFire=True, maxCharge=False, angle=67.9, distance=6.74
+[17:49:34.886] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:34.886] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: AmmoCache#3, ammo=HCHE, autoFire=True, maxCharge=False, angle=145.7, distance=5.47
+[17:49:35.061] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:35.061] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: SupplyCache#1, ammo=HCHE, autoFire=True, maxCharge=False, angle=242.9, distance=1.40
+[17:49:35.422] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:35.423] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: SupplyCache#2, ammo=HCHE, autoFire=True, maxCharge=False, angle=231.6, distance=2.85
+[17:49:35.747] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:35.748] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: SupplyCache#3, ammo=HCHE, autoFire=True, maxCharge=False, angle=120.3, distance=5.18
+[17:49:36.074] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:36.074] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: SupplyCache#4, ammo=HCHE, autoFire=True, maxCharge=False, angle=36.3, distance=1.72
+[17:49:36.242] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:36.243] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#1, ammo=HCHE, autoFire=True, maxCharge=False, angle=204.7, distance=2.65
+[17:49:36.592] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:36.592] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#2, ammo=HCHE, autoFire=True, maxCharge=False, angle=231.4, distance=2.53
+[17:49:36.936] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:36.936] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#3, ammo=HCHE, autoFire=True, maxCharge=False, angle=210.0, distance=1.40
+[17:49:37.288] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:37.288] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#4, ammo=HCHE, autoFire=True, maxCharge=False, angle=209.8, distance=2.29
+[17:49:37.484] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:37.484] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#5, ammo=HCHE, autoFire=True, maxCharge=False, angle=319.5, distance=2.35
+[17:49:37.865] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:37.866] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#6, ammo=HCHE, autoFire=True, maxCharge=False, angle=258.8, distance=2.62
+[17:49:38.234] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:38.235] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#7, ammo=HCHE, autoFire=True, maxCharge=False, angle=100.7, distance=10.59
+[17:49:38.586] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:38.587] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#8, ammo=HCHE, autoFire=True, maxCharge=False, angle=132.6, distance=5.29
+[17:49:38.790] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:38.790] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#9, ammo=HCHE, autoFire=True, maxCharge=False, angle=84.6, distance=8.51
+[17:49:38.969] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:38.969] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#10, ammo=HCHE, autoFire=True, maxCharge=False, angle=68.6, distance=7.71
+[17:49:39.171] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:39.172] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#11, ammo=HCHE, autoFire=True, maxCharge=False, angle=70.9, distance=11.02
+[17:49:39.534] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:39.535] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#12, ammo=HCHE, autoFire=True, maxCharge=False, angle=111.1, distance=11.27
+[17:49:39.872] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:39.872] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#13, ammo=HCHE, autoFire=True, maxCharge=False, angle=104.5, distance=5.65
+[17:49:40.065] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:40.066] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#14, ammo=HCHE, autoFire=True, maxCharge=False, angle=111.2, distance=10.90
+[17:49:40.432] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:40.432] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#15, ammo=HCHE, autoFire=True, maxCharge=False, angle=69.6, distance=8.45
+[17:49:40.864] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:40.864] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#16, ammo=HCHE, autoFire=True, maxCharge=False, angle=112.2, distance=0.29
+[17:49:41.563] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:41.563] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#17, ammo=HCHE, autoFire=True, maxCharge=False, angle=190.1, distance=0.97
+[17:49:41.748] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:41.748] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileInfatry#18, ammo=HCHE, autoFire=True, maxCharge=False, angle=72.6, distance=7.10
+[17:49:41.898] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:41.898] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#1, ammo=HCHE, autoFire=True, maxCharge=False, angle=68.3, distance=5.86
+[17:49:42.059] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:42.059] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#2, ammo=HCHE, autoFire=True, maxCharge=False, angle=96.3, distance=1.92
+[17:49:42.215] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:42.215] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#3, ammo=HCHE, autoFire=True, maxCharge=False, angle=60.0, distance=8.23
+[17:49:42.399] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:42.399] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#4, ammo=HCHE, autoFire=True, maxCharge=False, angle=148.6, distance=3.63
+[17:49:43.188] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:43.189] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#5, ammo=HCHE, autoFire=True, maxCharge=False, angle=89.7, distance=3.96
+[17:49:43.413] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:43.414] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#6, ammo=HCHE, autoFire=True, maxCharge=False, angle=108.2, distance=8.06
+[17:49:44.337] [MapEnemyMarker] [MapEnemyMarker] Applied scene options: AutoFire=True, maxCharge=False
+[17:49:44.337] [MapEnemyMarker] [MapEnemyMarker] Strike request accepted: HostileTank#7, ammo=HCHE, autoFire=True, maxCharge=False, angle=103.7, distance=5.45
+[17:49:47.729] [MapEnemyMarker] 35 enemies updated
+[17:49:48.537] [MapEnemyMarker] 35 enemies updated
+[17:49:49.532] [MapEnemyMarker] 35 enemies updated
+[17:49:50.271] [FCS] GunSystem Left: Cylinder bullets: , , , , , 
+[17:49:50.271] [FCS] GunSystem Left: Cylinder bullets: , , , , , 
+[17:49:50.819] [MapEnemyMarker] 35 enemies updated
+[17:49:51.807] [MapEnemyMarker] 35 enemies updated
+[17:49:52.809] [MapEnemyMarker] 35 enemies updated
+[17:49:52.923] [FCS] GunSystem Left: Cylinder bullets: HCHE, , , , , 
+[17:49:53.823] [MapEnemyMarker] 35 enemies updated
+[17:49:54.844] [MapEnemyMarker] 35 enemies updated
+[17:49:55.491] [FCS] GunSystem Right: Cylinder bullets: , , , , , 
+[17:49:55.492] [FCS] GunSystem Right: Cylinder bullets: , , , , , 
+[17:49:55.831] [MapEnemyMarker] 35 enemies updated
+[17:49:56.848] [MapEnemyMarker] 35 enemies updated
+[17:49:57.863] [MapEnemyMarker] 35 enemies updated
+[17:49:58.244] [FCS] GunSystem Right: Cylinder bullets: HCHE, , , , , 
+[17:49:58.865] [MapEnemyMarker] 35 enemies updated
+[17:49:59.863] [MapEnemyMarker] 35 enemies updated
+[17:50:00.866] [MapEnemyMarker] 35 enemies updated
+[17:50:01.876] [MapEnemyMarker] 35 enemies updated
+[17:50:02.867] [MapEnemyMarker] 35 enemies updated
+[17:50:03.876] [MapEnemyMarker] 35 enemies updated
+[17:50:04.876] [MapEnemyMarker] 35 enemies updated
+[17:50:05.877] [MapEnemyMarker] 35 enemies updated
+[17:50:06.872] [MapEnemyMarker] 35 enemies updated
+[17:50:07.884] [MapEnemyMarker] 35 enemies updated
+[17:50:08.905] [MapEnemyMarker] 35 enemies updated
+[17:50:09.898] [MapEnemyMarker] 35 enemies updated
+[17:50:10.886] [MapEnemyMarker] 35 enemies updated
+[17:50:11.899] [MapEnemyMarker] 35 enemies updated
+[17:50:12.911] [MapEnemyMarker] 35 enemies updated
+[17:50:13.918] [MapEnemyMarker] 35 enemies updated
+[17:50:14.909] [MapEnemyMarker] 35 enemies updated
+[17:50:15.915] [MapEnemyMarker] 35 enemies updated
+[17:50:16.914] [MapEnemyMarker] 35 enemies updated
+[17:50:17.919] [MapEnemyMarker] 35 enemies updated
+[17:50:18.927] [MapEnemyMarker] 35 enemies updated
+[17:50:19.932] [MapEnemyMarker] 35 enemies updated
+[17:50:20.926] [MapEnemyMarker] 35 enemies updated
+[17:50:21.925] [MapEnemyMarker] 35 enemies updated
+[17:50:22.941] [MapEnemyMarker] 35 enemies updated
+[17:50:23.947] [MapEnemyMarker] 35 enemies updated
+[17:50:24.947] [MapEnemyMarker] 35 enemies updated
+[17:50:26.166] [MapEnemyMarker] 35 enemies updated
+[17:50:29.705] [MapEnemyMarker] 35 enemies updated
+[17:50:30.705] [MapEnemyMarker] 35 enemies updated
+[17:50:31.717] [MapEnemyMarker] 35 enemies updated
+[17:50:32.711] [MapEnemyMarker] 35 enemies updated
+[17:50:33.713] [MapEnemyMarker] 35 enemies updated
+[17:50:34.711] [MapEnemyMarker] 35 enemies updated
+[17:50:35.717] [MapEnemyMarker] 35 enemies updated
+[17:50:36.715] [MapEnemyMarker] 35 enemies updated
+[17:50:37.731] [MapEnemyMarker] 35 enemies updated
+[17:50:38.743] [MapEnemyMarker] 35 enemies updated
+[17:50:39.744] [MapEnemyMarker] 35 enemies updated
+[17:50:40.730] [MapEnemyMarker] 35 enemies updated
+[17:50:41.745] [MapEnemyMarker] 35 enemies updated
+[17:50:42.746] [MapEnemyMarker] 35 enemies updated
+[17:50:43.738] [MapEnemyMarker] 35 enemies updated
+[17:50:44.744] [MapEnemyMarker] 35 enemies updated
+[17:50:45.727] [MapEnemyMarker] 35 enemies updated
+[17:50:46.734] [MapEnemyMarker] 35 enemies updated
+[17:50:47.728] [MapEnemyMarker] 35 enemies updated
+[17:50:48.743] [MapEnemyMarker] 35 enemies updated
+[17:50:49.751] [MapEnemyMarker] 35 enemies updated
+[17:50:50.760] [MapEnemyMarker] 35 enemies updated
+[17:50:51.768] [MapEnemyMarker] 35 enemies updated
+[17:50:52.748] [MapEnemyMarker] 35 enemies updated
+[17:50:53.754] [MapEnemyMarker] 35 enemies updated
+[17:50:54.756] [MapEnemyMarker] 35 enemies updated
+[17:50:55.774] [MapEnemyMarker] 35 enemies updated
+[17:50:56.784] [MapEnemyMarker] 35 enemies updated
+[17:50:57.785] [MapEnemyMarker] 35 enemies updated
+[17:50:58.789] [MapEnemyMarker] 35 enemies updated
+[17:50:59.795] [MapEnemyMarker] 35 enemies updated
+[17:51:00.804] [MapEnemyMarker] 35 enemies updated
+[17:51:01.791] [MapEnemyMarker] 35 enemies updated
+[17:51:02.796] [MapEnemyMarker] 35 enemies updated
+[17:51:03.798] [MapEnemyMarker] 35 enemies updated
+[17:51:04.809] [MapEnemyMarker] 35 enemies updated
+[17:51:05.811] [MapEnemyMarker] 35 enemies updated
+[17:51:06.810] [MapEnemyMarker] 35 enemies updated
+[17:51:07.824] [MapEnemyMarker] 35 enemies updated
+[17:51:08.829] [MapEnemyMarker] 35 enemies updated
+[17:51:09.834] [MapEnemyMarker] 35 enemies updated
+[17:51:10.841] [MapEnemyMarker] 35 enemies updated
+[17:51:11.836] [MapEnemyMarker] 35 enemies updated
+[17:51:12.849] [MapEnemyMarker] 35 enemies updated
+[17:51:13.856] [MapEnemyMarker] 35 enemies updated
+[17:51:14.847] [MapEnemyMarker] 35 enemies updated
+[17:51:15.854] [MapEnemyMarker] 35 enemies updated
+[17:51:20.091] Preferences Saved!

@@ -1,0 +1,305 @@
+[15:06:52.218] [MelonLoader.Bootstrap] Using HostFXR Path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet\host\fxr\6.0.36\hostfxr.dll
+[15:06:52.224] [MelonLoader.Bootstrap] Using .NET runtime: 'D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\dotnet'
+
+[15:06:53.032] ------------------------------
+[15:06:53.034] MelonLoader v0.7.3 Open-Beta
+[15:06:53.036] OS: Windows 11
+[15:06:53.036] Hash Code: BDD43DC0F3893C208C95389B863AB61C967AE14204DA0DD8051647E754C8709B
+[15:06:53.036] ------------------------------
+[15:06:53.037] Game Type: Il2cpp
+[15:06:53.037] Game Arch: x64
+[15:06:53.037] ------------------------------
+[15:06:53.037] Command-Line: 
+[15:06:53.037] ------------------------------
+[15:06:53.037] Core::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[15:06:53.038] Game::BasePath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo
+[15:06:53.038] Game::DataPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator_Data
+[15:06:53.038] Game::ApplicationPath = D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\Iron Nest Heavy Turret Simulator.exe
+[15:06:53.038] Runtime Type: net6
+[15:06:53.412] ------------------------------
+[15:06:53.412] Game Name: Iron Nest: Heavy Turret Simulator
+[15:06:53.413] Game Developer: Iron Nest
+[15:06:53.414] Unity Version: 6000.3.9f1
+[15:06:53.414] Game Version: 0.4.0
+[15:06:53.414] ------------------------------
+
+[15:06:54.728] Preferences Loaded!
+
+[15:06:54.779] Loading UserLibs...
+[15:06:54.796] ------------------------------
+[15:06:54.799] Melon Assembly loaded: '.\UserLibs\IronNestFCS.Abstractions.dll'
+[15:06:54.800] SHA256 Hash: '8EBE19B12C0FE0FFE584860786F42E54AC95D7BB5E5D1F14032C3C3D393DFEA1'
+[15:06:54.800] ------------------------------
+[15:06:54.801] 0 UserLibs loaded.
+
+[15:06:54.801] Loading Plugins...
+[15:06:54.806] 0 Plugins loaded.
+
+[15:07:00.576] Loading Il2CppAssemblyGenerator...
+[15:07:00.828] [Il2CppAssemblyGenerator] Contacting RemoteAPI...
+[15:07:05.510] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:07:06.788] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-1.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:07:07.903] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://api-2.melonloader.com/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:07:09.563] [ERROR] [Il2CppAssemblyGenerator] WebException (BadGateway) while Contacting RemoteAPI Host (https://melon.samboy.dev/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 502 (Bad Gateway).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:07:10.747] [ERROR] [Il2CppAssemblyGenerator] WebException (526) while Contacting RemoteAPI Host (https://melon.dubyadu.de/api/v1/game/iron-nest-heavy-turret-simulator): System.Net.Http.HttpRequestException: Response status code does not indicate success: 526 (<none>).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MelonLoader.Il2CppAssemblyGenerator.RemoteAPI.ContactHosts() in D:\a\MelonLoader\MelonLoader\Dependencies\Il2CppAssemblyGenerator\RemoteAPI.cs:line 61
+[15:07:10.747] [Il2CppAssemblyGenerator] RemoteAPI.DumperVersion = null
+[15:07:10.748] [Il2CppAssemblyGenerator] RemoteAPI.ObfuscationRegex = null
+[15:07:10.748] [Il2CppAssemblyGenerator] RemoteAPI.MappingURL = null
+[15:07:10.748] [Il2CppAssemblyGenerator] RemoteAPI.MappingFileSHA512 = null
+[15:07:10.751] [Il2CppAssemblyGenerator] Using Cpp2IL Version: 2022.1.0-pre-release.21
+[15:07:10.752] [Il2CppAssemblyGenerator] Using Il2CppInterop Version = 1.5.1-ci.845+f03c8f4ae507d47ea814f3d11d1ec6b0391c1576
+[15:07:10.752] [Il2CppAssemblyGenerator] Using Unity Dependencies Version = 6000.3.9
+[15:07:10.752] [Il2CppAssemblyGenerator] Using Deobfuscation Regex = null
+[15:07:10.752] [Il2CppAssemblyGenerator] Cpp2IL is up to date.
+[15:07:10.752] [Il2CppAssemblyGenerator] Cpp2IL.Plugin.StrippedCodeRegSupport is up to date.
+[15:07:10.753] [Il2CppAssemblyGenerator] UnityDependencies is up to date.
+[15:07:10.753] [Il2CppAssemblyGenerator] Checking GameAssembly...
+[15:07:11.334] [Il2CppAssemblyGenerator] Assembly is up to date. No Generation Needed.
+
+[15:07:11.335] Loading Mods...
+[15:07:11.473] ------------------------------
+[15:07:11.475] Melon Assembly loaded: '.\Mods\IronNestFCS.dll'
+[15:07:11.475] SHA256 Hash: 'CE58AEFD063028F5B32F9004E02A250DB0A324B57009693703310B4D68F48B86'
+[15:07:11.477] Melon Assembly loaded: '.\Mods\MapEnemyMarker.dll'
+[15:07:11.477] SHA256 Hash: 'D9E8D1C42DB6AD1792311077FDFA5B6E9C698410CCF467336EB2A54F1A9FDBBD'
+
+[15:07:12.067] ------------------------------
+[15:07:12.068] IronNestFCS v1.0.4
+[15:07:12.068] by svr2kos2
+[15:07:12.068] Assembly: IronNestFCS.dll
+[15:07:12.069] ------------------------------
+[15:07:12.074] ------------------------------
+[15:07:12.074] MapEnemyMarker v1.0.0
+[15:07:12.074] by Iron Nest
+[15:07:12.074] Assembly: MapEnemyMarker.dll
+[15:07:12.075] ------------------------------
+[15:07:12.075] ------------------------------
+[15:07:12.075] 2 Mods loaded.
+
+[15:07:27.448] [WARNING] [Il2CppInterop] Class::Init signatures have been exhausted, using a substitute!
+[15:07:27.520] [Il2CppInterop] Registered mono type MelonLoader.Support.MonoEnumeratorWrapper in il2cpp domain
+[15:07:27.661] Support Module Loaded: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\MelonLoader\Dependencies\SupportModules\Il2Cpp.dll
+[15:07:27.763] IronNestFCS Host Started。Logic path: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\UserData\IronNestFCS\IronNestFCS.Logic.dll
+[15:07:27.763] Press F9 to hot reload Logic.
+[15:07:29.257] [WARNING] [IronNestFCS] [FCS] 未找到 Player Turret Piece，当前场景尚未就绪
+[15:07:29.258] [IronNestFCS] [FCS] Initialize: failed
+[15:07:29.284] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:07:29.318] MapEnemyMarker loaded!
+[15:07:29.318] [MapEnemyMarker] Web root: D:\Steam\steamapps\common\IRON NEST Heavy Turret Simulator Demo\火控计算机网页版
+[15:07:29.320] [MapEnemyMarker] HTTP server started on port 45678
+[15:07:29.360] [MapEnemyMarker] Successfully patched Time.frameCount
+[15:08:20.912] [Il2CppInterop] Registered mono type MelonLoader.Support.SM_Component in il2cpp domain
+[15:08:21.039] Registered mono icall UnityEngine.Transform::SetAsLastSibling in il2cpp domain
+[15:08:21.240] [MapEnemyMarker] [MapEnemyMarker] Found Assembly-CSharp with 1116 types
+[15:08:21.241] [MapEnemyMarker] [MapEnemyMarker] Could not find FireMission type, trying broad search...
+[15:08:21.241] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCard
+[15:08:21.248] [MapEnemyMarker]   Candidate: Il2Cpp.FireMissionCardPrinter
+[15:08:21.249] [MapEnemyMarker]   Candidate: Il2Cpp.FireMission
+[15:08:21.250] [MapEnemyMarker]   Found: Il2Cpp.FireMission (Instance=Instance, Entities=Entities)
+[15:08:21.251] [MapEnemyMarker] [MapEnemyMarker] FireMission properties:
+[15:08:21.251] [MapEnemyMarker]   Property: Instance (FireMission)
+[15:08:21.251] [MapEnemyMarker]   Property: Entities (Dictionary`2)
+[15:08:21.251] [MapEnemyMarker]   Property: _Instance_k__BackingField (FireMission)
+[15:08:21.251] [MapEnemyMarker]   Property: useFixedSeed (Boolean)
+[15:08:21.251] [MapEnemyMarker]   Property: fixedSeed (Int32)
+[15:08:21.251] [MapEnemyMarker]   Property: coordinateRoot (RectTransform)
+[15:08:21.252] [MapEnemyMarker]   Property: POI_Prefab (EntityLocation)
+[15:08:21.252] [MapEnemyMarker]   Property: cellWidth (Single)
+[15:08:21.252] [MapEnemyMarker]   Property: cellHeight (Single)
+[15:08:21.252] [MapEnemyMarker]   Property: yIncreasesUp (Boolean)
+[15:08:21.252] [MapEnemyMarker]   Property: distanceToKmScale (Single)
+[15:08:21.252] [MapEnemyMarker]   Property: clearSpawnedMarkers (Boolean)
+[15:08:21.252] [MapEnemyMarker]   Property: DebugLogs (Boolean)
+[15:08:21.253] [MapEnemyMarker]   Property: selectOnlyActivePoints (Boolean)
+[15:08:21.253] [MapEnemyMarker]   Property: useAlternateTextWhenNoActive (Boolean)
+[15:08:21.253] [MapEnemyMarker]   Property: altTextNoActiveTarget (String)
+[15:08:21.256] [MapEnemyMarker]   Property: altTextNoActiveEnemy (String)
+[15:08:21.257] [MapEnemyMarker]   Property: altTextNoActiveAlly (String)
+[15:08:21.257] [MapEnemyMarker]   Property: altTextNoActiveOptionalTarget (String)
+[15:08:21.257] [MapEnemyMarker]   Property: seed (Int32)
+[15:08:21.257] [MapEnemyMarker]   Property: m_CancellationTokenSource (CancellationTokenSource)
+[15:08:21.257] [MapEnemyMarker]   Property: destroyCancellationToken (CancellationToken)
+[15:08:21.257] [MapEnemyMarker]   Property: useGUILayout (Boolean)
+[15:08:21.258] [MapEnemyMarker]   Property: didStart (Boolean)
+[15:08:21.258] [MapEnemyMarker]   Property: didAwake (Boolean)
+[15:08:21.258] [MapEnemyMarker]   Property: enabled (Boolean)
+[15:08:21.258] [MapEnemyMarker]   Property: isActiveAndEnabled (Boolean)
+[15:08:21.258] [MapEnemyMarker]   Property: transform (Transform)
+[15:08:21.258] [MapEnemyMarker]   Property: transformHandle (TransformHandle)
+[15:08:21.258] [MapEnemyMarker]   Property: gameObject (GameObject)
+[15:08:21.258] [MapEnemyMarker]   Property: tag (String)
+[15:08:21.259] [MapEnemyMarker]   Property: kInstanceID_None (Int32)
+[15:08:21.259] [MapEnemyMarker]   Property: m_CachedPtr (IntPtr)
+[15:08:21.259] [MapEnemyMarker]   Property: OffsetOfInstanceIDInCPlusPlusObject (Int32)
+[15:08:21.259] [MapEnemyMarker]   Property: objectIsNullMessage (String)
+[15:08:21.259] [MapEnemyMarker]   Property: cloneDestroyedMessage (String)
+[15:08:21.259] [MapEnemyMarker]   Property: name (String)
+[15:08:21.259] [MapEnemyMarker]   Property: hideFlags (HideFlags)
+[15:08:21.259] [MapEnemyMarker]   Property: ObjectClass (IntPtr)
+[15:08:21.259] [MapEnemyMarker]   Property: Pointer (IntPtr)
+[15:08:21.259] [MapEnemyMarker]   Property: WasCollected (Boolean)
+[15:08:21.259] [MapEnemyMarker] [MapEnemyMarker] FireMission methods (all):
+[15:08:21.269] [MapEnemyMarker]   M: OnValidate() -> Void
+[15:08:21.272] [MapEnemyMarker]   M: Awake() -> Void
+[15:08:21.272] [MapEnemyMarker]   M: OnEnable() -> Void
+[15:08:21.272] [MapEnemyMarker]   M: OnDestroy() -> Void
+[15:08:21.272] [MapEnemyMarker]   M: GenerateMission() -> Void
+[15:08:21.272] [MapEnemyMarker]   M: GetGridBounds() -> Il2CppStructArray`1
+[15:08:21.273] [MapEnemyMarker]   M: ToLocalSpace(Vector3) -> Vector2
+[15:08:21.273] [MapEnemyMarker]   M: CreateMapEntity(String,String,Vector3,EntityRoles,Int32,Int32,Int32,MapEntityStates,String) -> MapEntity
+[15:08:21.273] [MapEnemyMarker]   M: MoveMapEntity(MapEntity,Vector3) -> Void
+[15:08:21.273] [MapEnemyMarker]   M: RegisterMapEntity(MapEntity) -> Void
+[15:08:21.273] [MapEnemyMarker]   M: SpawnRuntimeObjectForEntity(MapEntity) -> Void
+[15:08:21.290] [MapEnemyMarker]   M: GetNoActiveAlternateTextForRoles(HashSet`1) -> String
+[15:08:21.291] [MapEnemyMarker]   M: ProcessNotification(String) -> Void
+[15:08:21.291] [MapEnemyMarker]   M: ProcessEvent(EventData) -> Void
+[15:08:21.291] [MapEnemyMarker]   M: SetEntityState(MapEntity,MapEntityStates) -> Void
+[15:08:21.291] [MapEnemyMarker]   M: AutoAssignCoordinateRootIfNeeded() -> Void
+[15:08:21.292] [MapEnemyMarker]   M: ClearSpawnedMarkersIfNeeded() -> Void
+[15:08:21.292] [MapEnemyMarker]   M: SampleAreaPosition(RectTransform,Random) -> Vector2
+[15:08:21.292] [MapEnemyMarker]   M: RandomPointWorldInside(RectTransform,Random) -> Vector3
+[15:08:21.292] [MapEnemyMarker]   M: PositionInRootSpace(GameObject,Vector2) -> Void
+[15:08:21.292] [MapEnemyMarker]   M: RaiseCancellation() -> Void
+[15:08:21.293] [MapEnemyMarker]   M: IsInvoking() -> Boolean
+[15:08:21.293] [MapEnemyMarker]   M: IsInvoking(String) -> Boolean
+[15:08:21.293] [MapEnemyMarker]   M: StartCoroutine(String) -> Coroutine
+[15:08:21.293] [MapEnemyMarker]   M: StartCoroutine(String,Object) -> Coroutine
+[15:08:21.293] [MapEnemyMarker]   M: StartCoroutine(IEnumerator) -> Coroutine
+[15:08:21.293] [MapEnemyMarker]   M: StartCoroutine_Auto(IEnumerator) -> Coroutine
+[15:08:21.293] [MapEnemyMarker]   M: StopCoroutine(IEnumerator) -> Void
+[15:08:21.293] [MapEnemyMarker]   M: StopCoroutine(Coroutine) -> Void
+[15:08:21.293] [MapEnemyMarker]   M: StopCoroutine(String) -> Void
+[15:08:21.294] [MapEnemyMarker]   M: StopAllCoroutines() -> Void
+[15:08:21.294] [MapEnemyMarker]   M: StartCoroutineManaged(String,Object) -> Coroutine
+[15:08:21.294] [MapEnemyMarker]   M: StartCoroutineManaged2(IEnumerator) -> Coroutine
+[15:08:21.294] [MapEnemyMarker]   M: StopCoroutineManaged(Coroutine) -> Void
+[15:08:21.294] [MapEnemyMarker]   M: StopCoroutineFromEnumeratorManaged(IEnumerator) -> Void
+[15:08:21.294] [MapEnemyMarker]   M: GetScriptClassName() -> String
+[15:08:21.294] [MapEnemyMarker]   M: OnCancellationTokenCreated() -> Void
+[15:08:21.294] [MapEnemyMarker]   M: GetComponent(Type) -> Component
+[15:08:21.294] [MapEnemyMarker]   M: GetComponentFastPath(Type,IntPtr) -> Void
+[15:08:21.294] [MapEnemyMarker]   M: GetComponent() -> T
+[15:08:21.294] [MapEnemyMarker]   M: TryGetComponent(Type,Component&) -> Boolean
+[15:08:21.295] [MapEnemyMarker]   M: TryGetComponent(T&) -> Boolean
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentInChildren(Type,Boolean) -> Component
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentInChildren(Boolean) -> T
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentInChildren() -> T
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentsInChildren(Type) -> Il2CppReferenceArray`1
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentsInChildren(Boolean) -> Il2CppArrayBase`1
+[15:08:21.295] [MapEnemyMarker]   M: GetComponentsInChildren(Boolean,List`1) -> Void
+[15:08:21.296] [MapEnemyMarker]   M: GetComponentsInChildren() -> Il2CppArrayBase`1
+[15:08:21.296] [MapEnemyMarker]   M: GetComponentsInChildren(List`1) -> Void
+[15:08:21.296] [MapEnemyMarker]   M: GetComponentInParent(Type,Boolean) -> Component
+[15:08:21.296] [MapEnemyMarker]   M: GetComponentInParent(Boolean) -> T
+[15:08:21.296] [MapEnemyMarker]   M: GetComponentInParent() -> T
+[15:08:21.297] [MapEnemyMarker]   M: GetComponentsInParent(Type,Boolean) -> Il2CppReferenceArray`1
+[15:08:21.297] [MapEnemyMarker]   M: GetComponentsInParent(Type) -> Il2CppReferenceArray`1
+[15:08:21.297] [MapEnemyMarker]   M: GetComponentsInParent(Boolean) -> Il2CppArrayBase`1
+[15:08:21.297] [MapEnemyMarker]   M: GetComponentsInParent(Boolean,List`1) -> Void
+[15:08:21.298] [MapEnemyMarker]   M: GetComponentsInParent() -> Il2CppArrayBase`1
+[15:08:21.298] [MapEnemyMarker]   M: GetComponentsForListInternal(Type,Object) -> Void
+[15:08:21.298] [MapEnemyMarker]   M: GetComponents(Type,List`1) -> Void
+[15:08:21.298] [MapEnemyMarker]   M: GetComponents(List`1) -> Void
+[15:08:21.298] [MapEnemyMarker]   M: GetComponents() -> Il2CppArrayBase`1
+[15:08:21.298] [MapEnemyMarker]   M: CompareTag(String) -> Boolean
+[15:08:21.298] [MapEnemyMarker]   M: SendMessage(String,Object) -> Void
+[15:08:21.298] [MapEnemyMarker]   M: SendMessage(String,Object,SendMessageOptions) -> Void
+[15:08:21.299] [MapEnemyMarker]   M: BroadcastMessage(String,Object,SendMessageOptions) -> Void
+[15:08:21.299] [MapEnemyMarker]   M: GetComponent(String) -> Component
+[15:08:21.299] [MapEnemyMarker]   M: GetComponentInChildren(Type) -> Component
+[15:08:21.299] [MapEnemyMarker]   M: GetComponentsInChildren(Type,Boolean) -> Il2CppReferenceArray`1
+[15:08:21.299] [MapEnemyMarker]   M: GetComponentInParent(Type) -> Component
+[15:08:21.299] [MapEnemyMarker]   M: GetComponents(Type) -> Il2CppReferenceArray`1
+[15:08:21.299] [MapEnemyMarker]   M: GetComponentIndex() -> Int32
+[15:08:21.299] [MapEnemyMarker]   M: SendMessageUpwards(String,Object,SendMessageOptions) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: SendMessageUpwards(String,Object) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: SendMessageUpwards(String) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: SendMessageUpwards(String,SendMessageOptions) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: SendMessage(String) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: SendMessage(String,SendMessageOptions) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: BroadcastMessage(String,Object) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: BroadcastMessage(String) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: BroadcastMessage(String,SendMessageOptions) -> Void
+[15:08:21.303] [MapEnemyMarker]   M: EnsureRunningOnMainThread() -> Void
+[15:08:21.303] [MapEnemyMarker]   M: GetEntityId() -> EntityId
+[15:08:21.303] [MapEnemyMarker]   M: GetInstanceID() -> Int32
+[15:08:21.304] [MapEnemyMarker]   M: GetHashCode() -> Int32
+[15:08:21.304] [MapEnemyMarker]   M: Equals(Object) -> Boolean
+[15:08:21.304] [MapEnemyMarker]   M: GetCachedPtr() -> IntPtr
+[15:08:21.304] [MapEnemyMarker]   M: ToString() -> String
+[15:08:21.304] [MapEnemyMarker]   M: GetName() -> String
+[15:08:21.304] [MapEnemyMarker]   M: SetName(String) -> Void
+[15:08:21.304] [MapEnemyMarker]   M: MarkDirty() -> Void
+[15:08:21.304] [MapEnemyMarker]   M: Finalize() -> Void
+[15:08:21.304] [MapEnemyMarker]   M: GetIl2CppType() -> Type
+[15:08:21.305] [MapEnemyMarker]   M: MemberwiseClone() -> Object
+[15:08:21.305] [MapEnemyMarker]   M: FieldGetter(String,String,Object&) -> Void
+[15:08:21.305] [MapEnemyMarker]   M: FieldSetter(String,String,Object) -> Void
+[15:08:21.305] [MapEnemyMarker]   M: Cast() -> T
+[15:08:21.305] [MapEnemyMarker]   M: Unbox() -> T
+[15:08:21.305] [MapEnemyMarker]   M: TryCast() -> T
+[15:08:21.305] [MapEnemyMarker]   M: GetType() -> Type
+[15:08:21.305] [MapEnemyMarker]   M: ToString() -> String
+[15:08:21.305] [MapEnemyMarker]   M: Equals(Object) -> Boolean
+[15:08:21.305] [MapEnemyMarker]   M: GetHashCode() -> Int32
+[15:08:21.306] [MapEnemyMarker] [MapEnemyMarker] Reflection init:
+[15:08:21.306] [MapEnemyMarker]   Instance prop: True
+[15:08:21.306] [MapEnemyMarker]   Entities prop: True
+[15:08:21.306] [MapEnemyMarker]   EntityRoles: True
+[15:08:21.306] [MapEnemyMarker]   MapEntityStates: True
+[15:08:21.306] [MapEnemyMarker]     Role None = 0
+[15:08:21.306] [MapEnemyMarker]     Role Enemy = 1
+[15:08:21.306] [MapEnemyMarker]     Role Ally = 2
+[15:08:21.307] [MapEnemyMarker]     Role Spotter = 6
+[15:08:21.307] [MapEnemyMarker]     Role AllyGroup1 = 10
+[15:08:21.307] [MapEnemyMarker]     Role AllyGroup2 = 18
+[15:08:21.307] [MapEnemyMarker]     Role Target = 32
+[15:08:21.307] [MapEnemyMarker]     Role OptionalTarget = 64
+[15:08:21.307] [MapEnemyMarker]     Role EnemyGroup1 = 129
+[15:08:21.307] [MapEnemyMarker]     Role EnemyGroup2 = 257
+[15:08:21.307] [MapEnemyMarker]     Role EnemyGroup3 = 513
+[15:08:21.307] [MapEnemyMarker]     Role Artillery = 32768
+[15:08:21.307] [MapEnemyMarker]     Role Fortification = 65536
+[15:08:21.307] [MapEnemyMarker]     Role Infantry = 131072
+[15:08:21.307] [MapEnemyMarker]     Role Tank = 262144
+[15:08:21.307] [MapEnemyMarker]     Role Reference = 33554432
+[15:08:30.582] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:08:30.583] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[15:08:30.583] [IronNestFCS] [FCS] Initialize: failed
+[15:08:30.583] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:08:30.899] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:08:30.900] [WARNING] [IronNestFCS] [FCS] 未找到 Fire Mission Root，当前场景尚未就绪
+[15:08:30.900] [IronNestFCS] [FCS] Initialize: failed
+[15:08:30.900] [WARNING] [IronNestFCS] [Reload] Logic.Initialize() returns false。
+[15:09:18.042] [MapEnemyMarker]   [0] ID=civ, Name=Civ, Role=Ally, MapPos=(16.6, 3.3, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.043] [MapEnemyMarker]   [1] ID=civ1, Name=Civ1, Role=Ally, MapPos=(16.8, 4.2, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [2] ID=civ2, Name=Civ2, Role=Ally, MapPos=(16.6, 4.5, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [3] ID=civ3, Name=Civ3, Role=Ally, MapPos=(16.7, 4.2, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [4] ID=civ4, Name=Civ4, Role=Ally, MapPos=(16.6, 4.5, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [5] ID=civ5, Name=Civ5, Role=Ally, MapPos=(16.8, 4.3, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [6] ID=civ6, Name=Civ6, Role=Ally, MapPos=(17.2, 3.6, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:18.044] [MapEnemyMarker]   [7] ID=civ7, Name=Civ7, Role=Ally, MapPos=(17.4, 3.5, 0.0), State=None, Health=1, Location=LocalPos=((0.00, 0.00))
+[15:09:19.017] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:20.002] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:20.786] [IronNestFCS] [FCS] 找到 Player Turret Piece: UnityEngine.Transform, Artilleries: 8
+[15:09:21.061] [IronNestFCS] [FCS] Initialize: success
+[15:09:21.062] [IronNestFCS] [Reload] Logic loaded and initialized successfully.
+[15:09:21.125] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:22.032] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:23.032] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:24.026] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:25.035] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:26.036] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:27.044] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:09:28.046] [MapEnemyMarker] [MapEnemyMarker] 1 enemies updated
+[15:10:26.941] Preferences Saved!

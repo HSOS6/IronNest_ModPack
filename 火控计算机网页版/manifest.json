@@ -1,0 +1,22 @@
+{
+  "name": "铁巢重炮计算器",
+  "short_name": "铁巢计算",
+  "description": "铁巢重炮射击计算工具，支持仰角/方位角计算、三角定位和地图预览",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#f0c040",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "f9kdalv7oc0eayxatkrvx5o98v0uftc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "f9kdalv7oc0eayxatkrvx5o98v0uftc.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
