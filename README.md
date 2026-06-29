@@ -1,6 +1,6 @@
 # Iron Nest 火控计算机
 
-开火功能：https://github.com/svr2kos2/IronNestFCS
+开火功能来自：https://github.com/svr2kos2/IronNestFCS
 
 【安装步骤】
 
