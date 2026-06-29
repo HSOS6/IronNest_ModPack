@@ -25,19 +25,5 @@
 - 首次启动可能比原版慢约114514秒，这是加载器初始化的正常现象
 - 如果防火墙弹窗，请允许游戏的网络访问（端口45678）
 - 游戏更新后如果mod失效，可能需要更新本包
-- 不要删除 bepinex_dotnet 目录，它是.NET运行时的文件
+- 不要删除 bepinex_dotnet 目录，它是.NET运行时
 
-【文件结构说明】
-
-游戏根目录/
-├── version.dll          ← 加载器入口
-├── doorstop_config.ini  ← 加载器配置
-├── .doorstop_version
-├── MelonLoader/         ← MelonLoader 运行时
-├── Mods/                ← MelonLoader mods (IronNestFCS)
-├── UserData/            ← mod配置和热加载逻辑DLL
-├── UserLibs/            ← mod依赖库
-├── Plugins/             ← 额外插件
-├── BepInEx/             ← BepInEx框架 (MapEnemyMarker)
-├── bepinex_dotnet/      ← .NET 6运行时
-└── 火控计算机网页版/    ← 网页前端文件
