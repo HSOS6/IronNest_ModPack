@@ -1,5 +1,9 @@
 # Iron Nest 火控计算机
 
+喜欢的点点star谢谢了~
+
+本项目地址https://github.com/HSOS6/IronNest_ModPack
+
 开火功能来自：https://github.com/svr2kos2/IronNestFCS
 
 【安装步骤】
