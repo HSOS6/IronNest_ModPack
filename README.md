@@ -10,8 +10,9 @@
 1. Steam 安装游戏 "IRON NEST: Heavy Turret Simulator" (Demo)
 2. 找到游戏安装目录，例如：
    D:\Steam\steamapps\common\IRON NEST Heavy Turet Simulator Demo
-3. 将项目/压缩包内的所有文件/文件夹，直接解压覆盖到游戏*根目录*
-4. 启动游戏即可。
+3. 下载项目文件：[点击跳转](https://github.com/HSOS6/IronNest_ModPack/releases/download/%E6%9B%B4%E6%96%B0/IronNest_ModPack.zip)
+4. 将项目/压缩包内的所有文件/文件夹，直接解压覆盖到游戏*根目录*
+5. 启动游戏即可。
 
 > 是的，就是这么简单
 
