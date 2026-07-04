@@ -15,12 +15,7 @@
 <body>
     <div class="app-container">
         <header class="app-header">
-            <h1>🔧 弹道计算机</h1>
-            <label class="header-toggle" title="粘贴时自动填充炮位和侦察哨坐标">
-                <input type="checkbox" id="auto-fill-toggle" onchange="toggleAutoFill()">
-                <span class="toggle-track"></span>
-                <span class="toggle-label">自动</span>
-            </label>
+            <h1>自动火炮计算机</h1>
         </header>
 
         <main class="app-content">
@@ -190,6 +185,45 @@
                 </div>
             </section>
 
+            <section id="page-queue" class="page">
+                <div class="card">
+                    <div class="card-title">打击队列</div>
+                    <div class="queue-status" id="queue-status">
+                        <div class="queue-active-tasks">
+                            <div class="queue-gun-card">
+                                <div class="queue-gun-label">左炮</div>
+                                <div class="queue-gun-info" id="queue-left-task">空闲</div>
+                            </div>
+                            <div class="queue-gun-card">
+                                <div class="queue-gun-label">右炮</div>
+                                <div class="queue-gun-info" id="queue-right-task">空闲</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queue-controls" style="margin:12px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                        <button class="btn btn-primary" onclick="refreshQueue()">刷新队列</button>
+                        <div class="switch-field" style="margin-left:auto;">
+                            <span class="switch-label">自动打击</span>
+                            <div class="checkbox-wrapper-8">
+                                <input class="tgl tgl-skewed" id="queue-auto-strike" type="checkbox">
+                                <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="queue-auto-strike"></label>
+                            </div>
+                        </div>
+                        <div class="switch-field">
+                            <span class="switch-label">自动刷新</span>
+                            <div class="checkbox-wrapper-8">
+                                <input class="tgl tgl-skewed" id="queue-auto-refresh" type="checkbox" checked>
+                                <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="queue-auto-refresh"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-title" style="margin-top:12px;">待执行队列</div>
+                    <div id="queue-pending-list" class="queue-pending-list">
+                        <div style="color:#666;text-align:center;padding:20px;">队列为空</div>
+                    </div>
+                </div>
+            </section>
+
             <section id="page-map" class="page">
                 <div class="card">
                     <div class="card-title">战术地图</div>
@@ -223,14 +257,20 @@
                                 <button class="ammo-btn star" data-ammo="STAR" onclick="selectAmmo('STAR')">STAR</button>
                             </div>
                             <div class="map-strike-options">
-                                <label class="inline-toggle">
-                                    <input type="checkbox" id="map-auto-fire-toggle">
-                                    <span>自动开火</span>
-                                </label>
-                                <label class="inline-toggle">
-                                    <input type="checkbox" id="map-max-charge-toggle">
-                                    <span>最大装药</span>
-                                </label>
+                                <div class="switch-field">
+                                    <span class="switch-label">自动开火</span>
+                                    <div class="checkbox-wrapper-8">
+                                        <input class="tgl tgl-skewed" id="map-auto-fire-toggle" type="checkbox">
+                                        <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="map-auto-fire-toggle"></label>
+                                    </div>
+                                </div>
+                                <div class="switch-field">
+                                    <span class="switch-label">最大装药</span>
+                                    <div class="checkbox-wrapper-8">
+                                        <input class="tgl tgl-skewed" id="map-max-charge-toggle" type="checkbox">
+                                        <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="map-max-charge-toggle"></label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -261,6 +301,10 @@
             <button class="nav-btn" data-page="scout" onclick="switchPage('scout')">
                 <span class="nav-icon">📡</span>
                 <span class="nav-label">侦察定位</span>
+            </button>
+            <button class="nav-btn" data-page="queue" onclick="switchPage('queue')">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">队列</span>
             </button>
             <button class="nav-btn" data-page="map" onclick="switchPage('map')">
                 <span class="nav-icon">🗺️</span>

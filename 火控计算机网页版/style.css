@@ -588,12 +588,13 @@ select:focus {
 }
 
 .nav-btn.active::before {
-    width: 33.33%;
+    width: 25%;
 }
 
 .nav-btn:nth-child(1).active::before { left: 0; }
-.nav-btn:nth-child(2).active::before { left: 33.33%; }
-.nav-btn:nth-child(3).active::before { left: 66.66%; }
+.nav-btn:nth-child(2).active::before { left: 25%; }
+.nav-btn:nth-child(3).active::before { left: 50%; }
+.nav-btn:nth-child(4).active::before { left: 75%; }
 
 .map-container {
     margin-bottom: 12px;
@@ -767,6 +768,379 @@ select:focus {
     margin-top: 2px;
 }
 
+.queue-status {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.queue-active-tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.queue-gun-card {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: #252525;
+    border: 1px solid #333;
+    padding: 12px;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.queue-gun-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* 跑马灯发光线条基础定位 */
+.glow-line {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+body.queue-auto-strike-active .queue-gun-card {
+    border-color: rgba(240, 192, 64, 0.35);
+    box-shadow: 0 0 10px rgba(240, 192, 64, 0.25);
+}
+
+body.queue-auto-strike-active .glow-line {
+    opacity: 1;
+}
+
+/* 上边：从left往right跑（0% - 25%） */
+.glow-line-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255, 230, 140, 1), rgba(240, 192, 64, 0.85), transparent);
+    background-size: 80px 100%;
+    background-repeat: no-repeat;
+    background-position: -80px 0;
+    animation: glow-run-top 2.2s linear infinite;
+    filter: drop-shadow(0 0 3px rgba(240, 192, 64, 0.85));
+}
+
+/* 右边：从top往bottom跑（25% - 50%） */
+.glow-line-right {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(255, 230, 140, 1), rgba(240, 192, 64, 0.85), transparent);
+    background-size: 100% 80px;
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+    animation: glow-run-right 2.2s linear infinite;
+    filter: drop-shadow(0 0 3px rgba(240, 192, 64, 0.85));
+}
+
+/* 下边：从right往left跑（50% - 75%） */
+.glow-line-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgba(255, 230, 140, 1), rgba(240, 192, 64, 0.85), transparent);
+    background-size: 80px 100%;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 80px) 0;
+    animation: glow-run-bottom 2.2s linear infinite;
+    filter: drop-shadow(0 0 3px rgba(240, 192, 64, 0.85));
+}
+
+/* 左边：从bottom往left跑（75% - 100%） */
+.glow-line-left {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgba(255, 230, 140, 1), rgba(240, 192, 64, 0.85), transparent);
+    background-size: 100% 80px;
+    background-repeat: no-repeat;
+    background-position: 0 calc(100% + 80px);
+    animation: glow-run-left 2.2s linear infinite;
+    filter: drop-shadow(0 0 3px rgba(240, 192, 64, 0.85));
+}
+
+/* 完美顺时针环绕动画关键帧，2.2s 一周期，四个边按 25% 比例依次点亮并流动，毫无间断 */
+@keyframes glow-run-top {
+    0% {
+        background-position: -80px 0;
+        opacity: 1;
+    }
+    25% {
+        background-position: calc(100% + 80px) 0;
+        opacity: 1;
+    }
+    25.001%, 100% {
+        background-position: calc(100% + 80px) 0;
+        opacity: 0;
+    }
+}
+
+@keyframes glow-run-right {
+    0%, 25% {
+        background-position: 0 -80px;
+        opacity: 0;
+    }
+    25.001% {
+        opacity: 1;
+    }
+    50% {
+        background-position: 0 calc(100% + 80px);
+        opacity: 1;
+    }
+    50.001%, 100% {
+        background-position: 0 calc(100% + 80px);
+        opacity: 0;
+    }
+}
+
+@keyframes glow-run-bottom {
+    0%, 50% {
+        background-position: calc(100% + 80px) 0;
+        opacity: 0;
+    }
+    50.001% {
+        opacity: 1;
+    }
+    75% {
+        background-position: -80px 0;
+        opacity: 1;
+    }
+    75.001%, 100% {
+        background-position: -80px 0;
+        opacity: 0;
+    }
+}
+
+@keyframes glow-run-left {
+    0%, 75% {
+        background-position: 0 calc(100% + 80px);
+        opacity: 0;
+    }
+    75.001% {
+        opacity: 1;
+    }
+    100% {
+        background-position: 0 -80px;
+        opacity: 1;
+    }
+}
+
+.queue-gun-label {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.queue-gun-info {
+    font-size: 14px;
+    color: #f0c040;
+    line-height: 1.5;
+    min-height: 44px;
+}
+
+.queue-pending-list {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.queue-task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: #252525;
+    border-left: 3px solid #4d96ff;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.queue-task-main {
+    min-width: 0;
+    flex: 1;
+}
+
+.queue-task-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 4px;
+}
+
+.queue-task-meta {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.queue-task-actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.queue-task-actions .p-btn[disabled] {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.switch-field {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 28px;
+}
+
+.switch-label {
+    font-size: 13px;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.map-strike-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.checkbox-wrapper-8 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.68);
+    transform-origin: center;
+}
+
+/* From Uiverse.io by Shoh2008 */
+.checkbox-wrapper-8 .tgl {
+    display: none;
+}
+
+.checkbox-wrapper-8 .tgl,
+.checkbox-wrapper-8 .tgl:after,
+.checkbox-wrapper-8 .tgl:before,
+.checkbox-wrapper-8 .tgl *,
+.checkbox-wrapper-8 .tgl *:after,
+.checkbox-wrapper-8 .tgl *:before,
+.checkbox-wrapper-8 .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-8 .tgl::-moz-selection,
+.checkbox-wrapper-8 .tgl:after::-moz-selection,
+.checkbox-wrapper-8 .tgl:before::-moz-selection,
+.checkbox-wrapper-8 .tgl *::-moz-selection,
+.checkbox-wrapper-8 .tgl *:after::-moz-selection,
+.checkbox-wrapper-8 .tgl *:before::-moz-selection,
+.checkbox-wrapper-8 .tgl + .tgl-btn::-moz-selection,
+.checkbox-wrapper-8 .tgl::selection,
+.checkbox-wrapper-8 .tgl:after::selection,
+.checkbox-wrapper-8 .tgl:before::selection,
+.checkbox-wrapper-8 .tgl *::selection,
+.checkbox-wrapper-8 .tgl *:after::selection,
+.checkbox-wrapper-8 .tgl *:before::selection,
+.checkbox-wrapper-8 .tgl + .tgl-btn::selection {
+    background: none;
+}
+
+.checkbox-wrapper-8 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-wrapper-8 .tgl + .tgl-btn:after,
+.checkbox-wrapper-8 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.checkbox-wrapper-8 .tgl + .tgl-btn:after {
+    left: 0;
+}
+
+.checkbox-wrapper-8 .tgl + .tgl-btn:before {
+    display: none;
+}
+
+.checkbox-wrapper-8 .tgl:checked + .tgl-btn:after {
+    left: 50%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn {
+    overflow: hidden;
+    transform: skew(-10deg);
+    backface-visibility: hidden;
+    transition: all 0.2s ease;
+    font-family: sans-serif;
+    background: #666;
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:after,
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:before {
+    transform: skew(10deg);
+    display: inline-block;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    line-height: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:after {
+    left: 100%;
+    content: attr(data-tg-on);
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:before {
+    left: 0;
+    content: attr(data-tg-off);
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:active {
+    background: #777;
+}
+
+.checkbox-wrapper-8 .tgl-skewed + .tgl-btn:active:before {
+    left: -10%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn {
+    background: #86d993;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:before {
+    left: -100%;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:after {
+    left: 0;
+}
+
+.checkbox-wrapper-8 .tgl-skewed:checked + .tgl-btn:active:after {
+    left: 10%;
+}
+
 @media (min-width: 768px) {
     body {
         height: 100vh;
@@ -895,7 +1269,7 @@ select:focus {
     }
 
     .nav-btn.active::before {
-        width: 33.33%;
+        width: 25%;
     }
 
     .canvas-wrapper {
@@ -916,6 +1290,15 @@ select:focus {
     .map-legend {
         font-size: 13px;
         gap: 8px 16px;
+    }
+
+    .switch-label {
+        font-size: 14px;
+    }
+
+    .checkbox-wrapper-8 {
+        transform: scale(0.75);
+        transform-origin: center;
     }
 
     .legend-dot {
@@ -940,26 +1323,6 @@ select:focus {
     .map-point-item .mp-pos {
         font-size: 13px;
     }
-}
-
-.map-strike-options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.inline-toggle {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #ccc;
-    font-size: 13px;
-}
-
-.inline-toggle input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #22c55e;
 }
 
 .recon-box {

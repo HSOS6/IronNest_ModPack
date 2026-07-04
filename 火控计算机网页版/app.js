@@ -6,13 +6,15 @@ const state = {
     currentAmmo: 'STAR',
     cannonPos: null,
     history: [],
-    autoFillEnabled: false,
     mapAutoFire: false,
     mapMaxCharge: false,
+    queueAutoStrike: false,
     completed: [],
     pinned: [],
     numMap: {},
     _nextNum: 1,
+    queueState: null,
+    _autoStrikeInProgress: false,
     points: {
         spotter: [],
         ref: [],
@@ -84,6 +86,7 @@ function getEnemySortKey(name) {
 // ==================== 敌人数据获取 ====================
 
 let enemyPollInterval = null;
+let queuePollInterval = null;
 
 async function fetchEnemyData() {
     try {
@@ -118,6 +121,8 @@ async function fetchEnemyData() {
                     }
                 });
             }
+
+            ensureAutoStrikeQueue();
         }
     } catch (e) {
         // 忽略连接错误（服务器可能未启动）
@@ -134,6 +139,24 @@ function stopEnemyPolling() {
     if (enemyPollInterval) {
         clearInterval(enemyPollInterval);
         enemyPollInterval = null;
+    }
+}
+
+function startQueuePolling() {
+    if (queuePollInterval) return;
+    queuePollInterval = setInterval(() => {
+        const toggle = document.getElementById('queue-auto-refresh');
+        if (!toggle || toggle.checked) {
+            refreshQueue();
+        }
+    }, 2000);
+    refreshQueue();
+}
+
+function stopQueuePolling() {
+    if (queuePollInterval) {
+        clearInterval(queuePollInterval);
+        queuePollInterval = null;
     }
 }
 
@@ -369,6 +392,12 @@ function switchPage(pageName) {
     } else {
         stopEnemyPolling();
     }
+
+    if (pageName === 'queue') {
+        startQueuePolling();
+    } else {
+        stopQueuePolling();
+    }
 }
 
 function switchSmallTab(tabName) {
@@ -583,6 +612,7 @@ function addPoint(type) {
     renderPointLists();
     updatePointSelects();
     saveState();
+    ensureAutoStrikeQueue();
 }
 
 function deletePoint(type, name) {
@@ -710,16 +740,20 @@ function usePointAsTarget(type, name, rawName) {
     switchPage('calculator');
 }
 
-async function strikePoint(type, name, rawName) {
+async function strikePoint(type, name, rawName, options = {}) {
     const resolved = resolvePointForAction(type, name, rawName);
     if (!resolved) {
-        alert('未找到可用于打击的目标坐标');
+        if (!options.silent) {
+            alert('未找到可用于打击的目标坐标');
+        }
         return;
     }
 
     const { coord, displayName } = resolved;
     if (!state.cannonPos) {
-        alert('请先设置炮位坐标后再执行打击');
+        if (!options.silent) {
+            alert('请先设置炮位坐标后再执行打击');
+        }
         return;
     }
 
@@ -764,13 +798,238 @@ async function strikePoint(type, name, rawName) {
         renderMapPointsList();
         drawRadarMap();
         saveState();
+        refreshQueue();
 
         const distanceText = typeof data.distance === 'number' ? `${data.distance.toFixed(2)}km` : '未知';
         const angleText = typeof data.angle === 'number' ? `${data.angle.toFixed(1)}°` : '未知';
-        alert(`已下发打击任务：${displayName}\n弹种：${state.currentAmmo}\n距离：${distanceText}\n角度：${angleText}`);
+        if (!options.silent) {
+            alert(`已下发打击任务：${displayName}\n弹种：${state.currentAmmo}\n距离：${distanceText}\n角度：${angleText}`);
+        }
     } catch (err) {
-        alert(`打击失败：${err.message || err}`);
+        if (!options.silent) {
+            alert(`打击失败：${err.message || err}`);
+        } else {
+            console.error('自动打击失败', err);
+        }
+        throw err;
     }
+}
+
+function formatQueueTask(task, emptyText) {
+    if (!task) {
+        return emptyText || '空闲';
+    }
+    const angleText = typeof task.angle === 'number' ? `${task.angle.toFixed(1)}°` : '--';
+    const distanceText = typeof task.distance === 'number' ? `${task.distance.toFixed(2)}km` : '--';
+    const ammoText = task.bulletType || '--';
+    const progressText = task.progress || '--';
+    return `T${task.targetId} ${ammoText} ${progressText}<br>目标: ${angleText}, ${distanceText}`;
+}
+
+function renderQueueState(data) {
+    const leftEl = document.getElementById('queue-left-task');
+    const rightEl = document.getElementById('queue-right-task');
+    const pendingEl = document.getElementById('queue-pending-list');
+    if (!leftEl || !rightEl || !pendingEl) {
+        return;
+    }
+
+    leftEl.innerHTML = formatQueueTask(data.leftTask, '空闲');
+    rightEl.innerHTML = formatQueueTask(data.rightTask, '空闲');
+
+        state.queueState = data;
+        const pending = Array.isArray(data.pending) ? data.pending : [];
+    if (pending.length === 0) {
+        pendingEl.innerHTML = '<div style="color:#666;text-align:center;padding:20px;">队列为空</div>';
+        return;
+    }
+
+    pendingEl.innerHTML = pending.map((task, index) => `
+        <div class="queue-task-item">
+            <div class="queue-task-main">
+                <div class="queue-task-title">#${index + 1} T${task.targetId} ${task.bulletType || ''}</div>
+                <div class="queue-task-meta">角度 ${Number(task.angle).toFixed(1)}° | 距离 ${Number(task.distance).toFixed(2)}km | ${task.progress || ''}</div>
+            </div>
+            <div class="queue-task-actions">
+                <button class="p-btn" onclick="moveQueueTask(${index}, ${index - 1})" ${index === 0 ? 'disabled' : ''}>上移</button>
+                <button class="p-btn" onclick="moveQueueTask(${index}, ${index + 1})" ${index === pending.length - 1 ? 'disabled' : ''}>下移</button>
+                <button class="p-btn del" onclick="removeQueueTask(${index})">删除</button>
+            </div>
+        </div>
+    `).join('');
+}
+
+function getCoordKey(coord) {
+    if (!coord || typeof coord.x !== 'number' || typeof coord.y !== 'number') return '';
+    return `${coord.x.toFixed(2)},${coord.y.toFixed(2)}`;
+}
+
+function getQueueTaskCoord(task) {
+    if (!task || typeof task.x !== 'number' || typeof task.y !== 'number') return null;
+    return { x: task.x, y: task.y };
+}
+
+function getQueueTargetKeys(queueState = state.queueState) {
+    const keys = new Set();
+    if (!queueState) return keys;
+
+    const addTask = (task) => {
+        const key = getCoordKey(getQueueTaskCoord(task));
+        if (key) keys.add(key);
+    };
+
+    addTask(queueState.leftTask);
+    addTask(queueState.rightTask);
+    (Array.isArray(queueState.pending) ? queueState.pending : []).forEach(addTask);
+
+    return keys;
+}
+
+function getQueueTargetCount(queueState = state.queueState) {
+    if (!queueState) return 0;
+    let count = 0;
+    if (queueState.leftTask) count++;
+    if (queueState.rightTask) count++;
+    count += Array.isArray(queueState.pending) ? queueState.pending.length : 0;
+    return count;
+}
+
+function getAutoStrikeCandidates() {
+    const candidates = [];
+    const seen = new Set();
+    const queueKeys = getQueueTargetKeys();
+    const completedKeys = new Set(state.completed || []);
+
+    const addCandidate = (item) => {
+        if (!item || !item.coord) return;
+        const key = getCoordKey(item.coord);
+        if (!key || seen.has(key) || queueKeys.has(key) || completedKeys.has(key)) return;
+        seen.add(key);
+        candidates.push(item);
+    };
+
+    (state.pinned || []).forEach((key) => {
+        const target = state.points.target.find(p => p.coord && getCoordKey(p.coord) === key);
+        if (target) {
+            addCandidate({ type: 'target', name: target.name, coord: target.coord, rawName: target.name });
+        }
+
+        const enemy = state.enemies.find(e => getCoordKey({ x: e.x, y: e.y }) === key);
+        if (enemy) {
+            addCandidate({ type: 'enemy', name: enemy.displayName || enemy.name, coord: { x: enemy.x, y: enemy.y }, rawName: enemy.name });
+        }
+    });
+
+    state.points.target.forEach(p => {
+        if (!p.coord) return;
+        addCandidate({ type: 'target', name: p.name, coord: p.coord, rawName: p.name });
+    });
+
+    [...state.enemies]
+        .filter(e => typeof e.x === 'number' && typeof e.y === 'number')
+        .sort((a, b) => getEnemySortKey(a.displayName || a.name) - getEnemySortKey(b.displayName || b.name))
+        .forEach(e => {
+            addCandidate({ type: 'enemy', name: e.displayName || e.name, coord: { x: e.x, y: e.y }, rawName: e.name });
+        });
+
+    return candidates;
+}
+
+async function ensureAutoStrikeQueue() {
+    if (!state.queueAutoStrike || state._autoStrikeInProgress || !state.cannonPos || !state.queueState) {
+        return;
+    }
+
+    const currentCount = getQueueTargetCount();
+    if (currentCount >= 4) {
+        return;
+    }
+
+    const candidates = getAutoStrikeCandidates();
+    const needCount = 4 - currentCount;
+    if (needCount <= 0 || candidates.length === 0) {
+        return;
+    }
+
+    state._autoStrikeInProgress = true;
+    try {
+        for (const candidate of candidates.slice(0, needCount)) {
+            await strikePoint(candidate.type, candidate.name, candidate.rawName, { silent: true });
+        }
+    } catch (err) {
+        console.error('自动补充打击队列失败', err);
+    } finally {
+        state._autoStrikeInProgress = false;
+    }
+}
+
+async function refreshQueue() {
+    try {
+        const response = await fetch('/api/queue', {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' }
+        });
+        const data = await response.json();
+        if (!response.ok || !data.success) {
+            throw new Error(data.error || `HTTP ${response.status}`);
+        }
+        renderQueueState(data);
+        await ensureAutoStrikeQueue();
+    } catch (err) {
+        const pendingEl = document.getElementById('queue-pending-list');
+        if (pendingEl) {
+            pendingEl.innerHTML = `<div style="color:#ff6b6b;text-align:center;padding:20px;">${err.message || err}</div>`;
+        }
+    }
+}
+
+async function removeQueueTask(index) {
+    try {
+        const task = state.queueState?.pending?.[index] || null;
+        const response = await fetch(`/api/queue/remove?index=${index}`, {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' }
+        });
+        const data = await response.json();
+        if (!response.ok || !data.success) {
+            throw new Error(data.error || `HTTP ${response.status}`);
+        }
+
+        if (task && typeof task.x === 'number' && typeof task.y === 'number') {
+            const completedKey = `${task.x.toFixed(2)},${task.y.toFixed(2)}`;
+            if (Array.isArray(state.completed)) {
+                state.completed = state.completed.filter(k => k !== completedKey);
+            }
+            renderMapPointsList();
+            drawRadarMap();
+            saveState();
+        }
+
+        refreshQueue();
+    } catch (err) {
+        alert(`删除失败：${err.message || err}`);
+    }
+}
+
+async function moveQueueTask(index, to) {
+    try {
+        const response = await fetch(`/api/queue/move?index=${index}&to=${to}`, {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' }
+        });
+        const data = await response.json();
+        if (!response.ok || !data.success) {
+            throw new Error(data.error || `HTTP ${response.status}`);
+        }
+        refreshQueue();
+    } catch (err) {
+        alert(`移动失败：${err.message || err}`);
+    }
+}
+
+function updateQueueAutoStrikeVisualState() {
+    const enabled = !!document.getElementById('queue-auto-strike')?.checked;
+    document.body.classList.toggle('queue-auto-strike-active', enabled);
 }
 
 function updatePointSelects() {
@@ -912,9 +1171,9 @@ function saveState() {
             cannonPos: state.cannonPos,
             history: state.history,
             points: state.points,
-            autoFillEnabled: state.autoFillEnabled,
             mapAutoFire: state.mapAutoFire,
             mapMaxCharge: state.mapMaxCharge,
+            queueAutoStrike: state.queueAutoStrike,
             completed: state.completed,
             pinned: state.pinned,
             numMap: state.numMap,
@@ -935,9 +1194,9 @@ function loadState() {
             state.cannonPos = parsed.cannonPos || null;
             state.history = parsed.history || [];
             state.points = parsed.points || { spotter: [], ref: [], target: [] };
-            state.autoFillEnabled = parsed.autoFillEnabled || false;
             state.mapAutoFire = parsed.mapAutoFire || false;
             state.mapMaxCharge = parsed.mapMaxCharge || false;
+            state.queueAutoStrike = parsed.queueAutoStrike || false;
             state.completed = parsed.completed || [];
             state.pinned = parsed.pinned || [];
             state.numMap = parsed.numMap || {};
@@ -949,77 +1208,21 @@ function loadState() {
                 document.getElementById('cannon-pos').value = coordToDisplay(state.cannonPos.x, state.cannonPos.y);
             }
             
-            document.getElementById('auto-fill-toggle').checked = state.autoFillEnabled;
             const mapAutoFireToggle = document.getElementById('map-auto-fire-toggle');
             if (mapAutoFireToggle) mapAutoFireToggle.checked = !!state.mapAutoFire;
             const mapMaxChargeToggle = document.getElementById('map-max-charge-toggle');
             if (mapMaxChargeToggle) mapMaxChargeToggle.checked = !!state.mapMaxCharge;
+            const queueAutoStrikeToggle = document.getElementById('queue-auto-strike');
+            if (queueAutoStrikeToggle) queueAutoStrikeToggle.checked = !!state.queueAutoStrike;
+            updateQueueAutoStrikeVisualState();
             
             updateCannonDisplay();
             renderHistory();
             renderPointLists();
+            refreshQueue();
         }
     } catch (e) {
         console.error('加载失败', e);
-    }
-}
-
-// ==================== 自动填充 ====================
-
-function isAutoFillEnabled() {
-    return state.autoFillEnabled;
-}
-
-function toggleAutoFill() {
-    state.autoFillEnabled = document.getElementById('auto-fill-toggle').checked;
-    saveState();
-}
-
-function autoParseFill(text) {
-    if (!state.autoFillEnabled) return;
-    
-    const clean = text.replace(/<[^>]+>/g, '');
-    const lines = clean.split('\n');
-    
-    let cannonFilled = false;
-    let spotterFilled = [];
-    
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (!line) continue;
-        
-        const ncMatch = line.match(/^(铁巢|Spotter#\d+)\s*[-–—]\s*([A-Za-z]\s*\d+(?:\s+\d+:\d+|\d{2})?)/);
-        if (ncMatch) {
-            const name = ncMatch[1].trim();
-            const coordStr = ncMatch[2].trim();
-            const coord = parseCoord(coordStr);
-            if (!coord) continue;
-            
-            if (/铁巢/.test(name) && !cannonFilled) {
-                state.cannonPos = { x: coord.x, y: coord.y };
-                document.getElementById('cannon-pos').value = coordToDisplay(coord.x, coord.y);
-                updateCannonDisplay();
-                cannonFilled = true;
-            } else if (/^Spotter/i.test(name)) {
-                spotterFilled.push({ name, coord });
-            }
-        }
-    }
-    
-    spotterFilled.forEach(sf => {
-        const existing = state.points.spotter.findIndex(p => p.name === sf.name);
-        const pt = { x: sf.coord.x, y: sf.coord.y };
-        if (existing >= 0) {
-            state.points.spotter[existing].coord = pt;
-        } else {
-            state.points.spotter.push({ name: sf.name, coord: pt, type: 'spotter', conditions: [] });
-        }
-    });
-    
-    if (cannonFilled || spotterFilled.length > 0) {
-        renderPointLists();
-        updatePointSelects();
-        saveState();
     }
 }
 
@@ -1257,8 +1460,6 @@ function parseAndImport() {
         alert('请先粘贴数据');
         return;
     }
-    
-    autoParseFill(text);
     
     const parsed = parseClipboardText(text);
     let imported = 0;
@@ -1986,6 +2187,10 @@ function renderMapPointsList() {
     }).join('');
 }
 
+function updateQueueAutoStrikeVisualState() {
+    document.body.classList.toggle('queue-auto-strike-active', !!state.queueAutoStrike);
+}
+
 // ==================== 初始化 ====================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -2001,12 +2206,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     updatePointSelects();
     
-    document.getElementById('clipboard-input').addEventListener('paste', () => {
-        setTimeout(() => {
-            autoParseFill(document.getElementById('clipboard-input').value);
-        }, 50);
-    });
-
     const mapAutoFireToggle = document.getElementById('map-auto-fire-toggle');
     if (mapAutoFireToggle) {
         mapAutoFireToggle.checked = !!state.mapAutoFire;
@@ -2022,6 +2221,29 @@ document.addEventListener('DOMContentLoaded', () => {
         mapMaxChargeToggle.addEventListener('change', () => {
             state.mapMaxCharge = mapMaxChargeToggle.checked;
             saveState();
+        });
+    }
+
+    const queueAutoRefreshToggle = document.getElementById('queue-auto-refresh');
+    if (queueAutoRefreshToggle) {
+        queueAutoRefreshToggle.addEventListener('change', () => {
+            if (queueAutoRefreshToggle.checked) {
+                refreshQueue();
+            }
+        });
+    }
+
+    const queueAutoStrikeToggle = document.getElementById('queue-auto-strike');
+    if (queueAutoStrikeToggle) {
+        queueAutoStrikeToggle.checked = !!state.queueAutoStrike;
+        updateQueueAutoStrikeVisualState();
+        queueAutoStrikeToggle.addEventListener('change', async () => {
+            state.queueAutoStrike = queueAutoStrikeToggle.checked;
+            updateQueueAutoStrikeVisualState();
+            saveState();
+            if (queueAutoStrikeToggle.checked) {
+                await refreshQueue();
+            }
         });
     }
 });
